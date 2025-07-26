@@ -2507,6 +2507,14 @@ const questionsData = [
 
 ];
 
+
+function shuffleArray(array) {
+    return array
+        .map((item) => ({ item, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ item }) => item);
+}
+
 export default function CBTApp() {
     const [mode, setMode] = useState(null); // 'practice' or 'real'
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -2516,10 +2524,10 @@ export default function CBTApp() {
     const [feedback, setFeedback] = useState('');
     const [selectedOption, setSelectedOption] = useState(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [shuffledQuestions, setShuffledQuestions] = useState([]);
     const timerRef = useRef(null);
     const progressBarRef = useRef(null);
 
-    // Format time as MM:SS
     const formatTime = (seconds) => {
         const mins = Math.floor(seconds / 60);
         const secs = seconds % 60;
@@ -2540,14 +2548,15 @@ export default function CBTApp() {
     }, [mode, timeLeft]);
 
     useEffect(() => {
-        // Update progress bar
         if (progressBarRef.current) {
-            const progress = (Object.keys(userAnswers).length / questionsData.length) * 100;
+            const progress = (Object.keys(userAnswers).length / shuffledQuestions.length) * 100;
             progressBarRef.current.style.width = `${progress}%`;
         }
     }, [userAnswers]);
 
     const startTest = (selectedMode, minutes = 0) => {
+        const randomQuestions = shuffleArray(questionsData);
+        setShuffledQuestions(randomQuestions);
         setMode(selectedMode);
         setCurrentIndex(0);
         setUserAnswers({});
@@ -2562,10 +2571,10 @@ export default function CBTApp() {
 
     const handleAnswer = (option) => {
         setSelectedOption(option);
-        setUserAnswers(prev => ({...prev, [currentIndex]: option}));
+        setUserAnswers(prev => ({ ...prev, [currentIndex]: option }));
 
         if (mode === 'practice') {
-            const currentQuestion = questionsData[currentIndex];
+            const currentQuestion = shuffledQuestions[currentIndex];
             if (option === currentQuestion.answer) {
                 setFeedback({
                     text: 'Correct! Well done!',
@@ -2583,7 +2592,7 @@ export default function CBTApp() {
     const nextQuestion = () => {
         setFeedback(null);
         setSelectedOption(null);
-        if (currentIndex < questionsData.length - 1) {
+        if (currentIndex < shuffledQuestions.length - 1) {
             setCurrentIndex(currentIndex + 1);
         }
     };
@@ -2606,7 +2615,7 @@ export default function CBTApp() {
     };
 
     const getScore = () => {
-        return questionsData.reduce((score, q, idx) =>
+        return shuffledQuestions.reduce((score, q, idx) =>
             q.answer === userAnswers[idx] ? score + 1 : score, 0
         );
     };
@@ -2620,8 +2629,7 @@ export default function CBTApp() {
 
     if (!mode) {
         return (
-            <div
-                className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+            <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
                 <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-md">
                     <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white text-center">
                         <h1 className="text-3xl font-bold mb-2">Knowledge Challenge</h1>
@@ -2648,12 +2656,10 @@ export default function CBTApp() {
                             className="p-6 bg-blue-50 rounded-xl border border-blue-100 cursor-pointer hover:shadow-md transition-all"
                             onClick={() => {
                                 const mins = parseInt(prompt("Enter test duration in minutes (recommended 5 minutes):", "5"), 10);
-                                if (!isNaN(mins)) {
-                                    if (mins <= 0) {
-                                        alert("Please enter a positive number of minutes.");
-                                    } else {
-                                        startTest('real', mins);
-                                    }
+                                if (!isNaN(mins) && mins > 0) {
+                                    startTest('real', mins);
+                                } else {
+                                    alert("Please enter a valid positive number.");
                                 }
                             }}
                         >
@@ -2675,13 +2681,12 @@ export default function CBTApp() {
 
     if (showResult) {
         const score = getScore();
-        const totalQuestions = questionsData.length;
+        const totalQuestions = shuffledQuestions.length;
         const percentage = Math.round((score / totalQuestions) * 100);
         const performanceMessage = getPerformanceMessage(percentage);
 
         return (
-            <div
-                className="min-h-screen bg-gradient-to-br from-green-50 to-teal-100 flex items-center justify-center p-4">
+            <div className="min-h-screen bg-gradient-to-br from-green-50 to-teal-100 flex items-center justify-center p-4">
                 <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-md">
                     <div className="bg-gradient-to-r from-green-600 to-teal-700 p-6 text-white text-center">
                         <h1 className="text-3xl font-bold mb-2">Test Results</h1>
@@ -2721,14 +2726,12 @@ export default function CBTApp() {
                             </div>
                             <div className="flex justify-between items-center mb-2">
                                 <span className="text-gray-600">Incorrect Answers:</span>
-                                <span
-                                    className="font-bold text-red-600">{totalQuestions - score}/{totalQuestions}</span>
+                                <span className="font-bold text-red-600">{totalQuestions - score}/{totalQuestions}</span>
                             </div>
                             {mode === 'real' && (
                                 <div className="flex justify-between items-center">
                                     <span className="text-gray-600">Time Taken:</span>
-                                    <span
-                                        className="font-bold text-blue-600">{formatTime((questionsData.length * 60) - timeLeft)}</span>
+                                    <span className="font-bold text-blue-600">{formatTime((shuffledQuestions.length * 60) - timeLeft)}</span>
                                 </div>
                             )}
                         </div>
@@ -2745,14 +2748,13 @@ export default function CBTApp() {
         );
     }
 
-    const currentQuestion = questionsData[currentIndex];
-    const totalQuestions = questionsData.length;
+    const currentQuestion = shuffledQuestions[currentIndex];
+    const totalQuestions = shuffledQuestions.length;
     const progressPercentage = (currentIndex / totalQuestions) * 100;
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 flex items-center justify-center p-4">
             <div className="bg-white rounded-2xl shadow-xl w-full max-w-2xl overflow-hidden">
-                {/* Header */}
                 <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-4 text-white">
                     <div className="flex justify-between items-center">
                         <h2 className="text-xl font-bold">Knowledge Challenge</h2>
@@ -2763,18 +2765,15 @@ export default function CBTApp() {
                             </div>
                         )}
                     </div>
-
-                    {/* Progress bar */}
                     <div className="mt-4 bg-blue-500 bg-opacity-30 rounded-full h-2">
                         <div
                             ref={progressBarRef}
                             className="bg-white h-2 rounded-full transition-all duration-300 ease-out"
                             style={{width: `${progressPercentage}%`}}
-                        ></div>
+                        />
                     </div>
                 </div>
 
-                {/* Main content */}
                 <div className="p-6">
                     <div className="flex justify-between items-center mb-6">
             <span className="text-sm font-medium text-gray-500">
@@ -2796,7 +2795,6 @@ export default function CBTApp() {
                             let optionClasses = "flex items-center p-4 border rounded-lg transition-all cursor-pointer";
 
                             if (mode === 'practice' && userAnswers[currentIndex]) {
-                                // Practice mode with answer selected
                                 if (isCorrect) {
                                     optionClasses += " bg-green-50 border-green-300";
                                 } else if (isSelected) {
@@ -2805,7 +2803,6 @@ export default function CBTApp() {
                                     optionClasses += " border-gray-200";
                                 }
                             } else {
-                                // Normal or real mode
                                 optionClasses += isSelected
                                     ? " bg-blue-50 border-blue-400 shadow-sm"
                                     : " border-gray-200 hover:border-blue-300";
@@ -2826,7 +2823,8 @@ export default function CBTApp() {
                                                         : "bg-red-500 border-red-500 text-white"
                                                     : "bg-blue-500 border-blue-500 text-white"
                                                 : "border-gray-300"
-                                        }`}>
+                                        }`}
+                                    >
                                         {isSelected && <FaCheck size={12}/>}
                                     </div>
                                     <div>
@@ -2858,7 +2856,7 @@ export default function CBTApp() {
                             <FaChevronLeft className="mr-2"/> Previous
                         </button>
 
-                        {currentIndex < questionsData.length - 1 ? (
+                        {currentIndex < shuffledQuestions.length - 1 ? (
                             <button
                                 className="flex items-center px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
                                 onClick={nextQuestion}
@@ -2868,9 +2866,7 @@ export default function CBTApp() {
                         ) : (
                             <button
                                 className={`flex items-center px-5 py-2 rounded-lg ${
-                                    isSubmitting
-                                        ? "bg-blue-400 cursor-wait"
-                                        : "bg-green-600 hover:bg-green-700"
+                                    isSubmitting ? "bg-blue-400 cursor-wait" : "bg-green-600 hover:bg-green-700"
                                 } text-white`}
                                 onClick={handleSubmitTest}
                                 disabled={isSubmitting}
@@ -2882,11 +2878,9 @@ export default function CBTApp() {
 
                     {mode === 'real' && (
                         <div className="mt-4 text-center text-sm text-gray-500">
-                            {Object.keys(userAnswers).length === totalQuestions ? (
-                                "All questions answered. Ready to submit!"
-                            ) : (
-                                `${totalQuestions - Object.keys(userAnswers).length} unanswered question${totalQuestions - Object.keys(userAnswers).length !== 1 ? 's' : ''} remaining`
-                            )}
+                            {Object.keys(userAnswers).length === totalQuestions
+                                ? "All questions answered. Ready to submit!"
+                                : `${totalQuestions - Object.keys(userAnswers).length} unanswered question${totalQuestions - Object.keys(userAnswers).length !== 1 ? 's' : ''} remaining`}
                         </div>
                     )}
                 </div>
