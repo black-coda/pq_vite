@@ -1503,6 +1503,1006 @@ const questionsData = [
             "D": "They generate immediate profits"
         },
         "answer": "A"
+    },
+    {
+        "question": "What did inconsistencies in British policy reinforce, particularly regarding indigenous cultures?",
+        "options": {
+            "A": "National unity",
+            "B": "A cleavaged process on a regional level",
+            "C": "Economic prosperity",
+            "D": "Technological advancements"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What did appeals to Islamic legitimacy uphold in the north?",
+        "options": {
+            "A": "The rule of the British",
+            "B": "The rule of the emirs",
+            "C": "The rule of Christian missionaries",
+            "D": "The rule of traditional chiefs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What kind of rule did modern nationalists in the south, whose thinking was shaped by European ideas, oppose?",
+        "options": {
+            "A": "Direct rule",
+            "B": "Indirect rule",
+            "C": "Self-rule",
+            "D": "Democratic rule"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to Guntram & David (1989), what was considered to be an anachronistic ruling class in power and shut out?",
+        "options": {
+            "A": "European colonizers",
+            "B": "Westernized elite",
+            "C": "Traditional rulers",
+            "D": "Religious leaders"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "From what sources did the ideological inspiration for southern nationalists come?",
+        "options": {
+            "A": "Local traditions only",
+            "B": "Prominent American-based activists such as Marcus Garvey and W.E.B. Du Bois",
+            "C": "European political thinkers",
+            "D": "Asian liberation movements"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following Pan-African groups was formed in London by Nigerian students?",
+        "options": {
+            "A": "West African Students Union",
+            "B": "African National Congress",
+            "C": "Pan-African Congress",
+            "D": "African Unity Movement"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "In 1925, what did early nationalists tend to ignore regarding Nigeria?",
+        "options": {
+            "A": "Its economic potential",
+            "B": "The focus of patriotism rather than the common denominator based on a newly assertive ethnic consciousness",
+            "C": "Its military strength",
+            "D": "Its natural resources"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What did nationalists criticize colonialism for?",
+        "options": {
+            "A": "Its economic benefits",
+            "B": "Its failure to appreciate the antiquity of indigenous cultures",
+            "C": "Its promotion of education",
+            "D": "Its establishment of infrastructure"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to Tamuno & Atand (1989), what happened to Independent Christian churches?",
+        "options": {
+            "A": "They became more European",
+            "B": "They merged with traditional religions",
+            "C": "They were eliminated",
+            "D": "They became missionary-free and blocked the advancement of a Nigerian clergy"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "In the 1920s, what types of associations were ostensibly non-political?",
+        "options": {
+            "A": "Religious organizations and sports clubs",
+            "B": "Professional and business associations, such as the Nigerian Union of Teachers",
+            "C": "Youth groups and cultural societies",
+            "D": "Women's empowerment groups"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to Ikelegbe (1996), what happened to the Head of State with the establishment of the Federation?",
+        "options": {
+            "A": "He became the Head of Government",
+            "B": "He ceased to be part of the Legislative Houses of the Federation",
+            "C": "He became the Chief Justice",
+            "D": "He assumed military command"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the second change regarding the Republican Constitution?",
+        "options": {
+            "A": "More power was given to local governments",
+            "B": "Previous constitutional arrangements were homegrown in the sense that it came into being as a result of a law enacted by the Federal Government",
+            "C": "The President gained more authority",
+            "D": "The judiciary became independent"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What significant change was introduced by the 1963 Republican Constitution regarding the President?",
+        "options": {
+            "A": "The President became the Chief of Defense Staff",
+            "B": "The President was no longer a representative of the Queen of England",
+            "C": "The President assumed judicial powers",
+            "D": "The President became an elected official"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Under the Republican Constitution, whom was the president empowered to appoint?",
+        "options": {
+            "A": "The Governor of each state",
+            "B": "The Chief Justice of the Supreme Court and the Chief Justice of Lagos",
+            "C": "The Inspector General of Police",
+            "D": "All members of the parliament"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the first phenomenon generally used to describe nationalism?",
+        "options": {
+            "A": "Economic prosperity",
+            "B": "The attitude which members of a nation have when they care about their national identity",
+            "C": "Political stability",
+            "D": "Cultural exchange"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the second phenomenon generally used to describe nationalism?",
+        "options": {
+            "A": "Military expansion",
+            "B": "The actions that the members of a nation take when seeking to sustain self-determination",
+            "C": "Technological advancement",
+            "D": "Social reforms"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to Merriam-Webster.com, what does nationalism imply?",
+        "options": {
+            "A": "A sense of global citizenship",
+            "B": "A sense of national consciousness that exalts one's nation above all others",
+            "C": "A desire for individual freedom",
+            "D": "A belief in economic liberalism"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to Nwabuoghugu (2004), what does nationalism define as?",
+        "options": {
+            "A": "A weak attachment to one's country",
+            "B": "A strong devotion to one's own country, patriotic feelings, efforts, principles and awareness",
+            "C": "A desire for international cooperation",
+            "D": "A pursuit of personal gain"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In Nigeria's context, what does nationalism connote?",
+        "options": {
+            "A": "Suppression of indigenous cultures",
+            "B": "The devotion of some elite groups (the nationalists) in advocating for the political emancipation of Nigerians from colonial rule",
+            "C": "The promotion of foreign influence",
+            "D": "The establishment of a monarchy"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "In the Colonial period, what did the British create in Nigeria?",
+        "options": {
+            "A": "A unified nation with a common identity",
+            "B": "An artificial political entity, bringing diverse peoples and regions together",
+            "C": "A strong centralized government",
+            "D": "An independent economic system"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When did the 1963 Republican Constitution come into force?",
+        "options": {
+            "A": "July 25, 1963",
+            "B": "September 19, 1963",
+            "C": "October 1, 1963",
+            "D": "January 15, 1966"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was one of the main features of the 1963 Republican Constitution?",
+        "options": {
+            "A": "The Queen of England remained the head of state.",
+            "B": "The Prime Minister became the head of state.",
+            "C": "The Queen of England ceased to be the head of state.",
+            "D": "The Privy Council became the highest court of appeal."
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who was the commander-in-chief of the armed forces under the 1963 Constitution?",
+        "options": {
+            "A": "The Queen of England",
+            "B": "The Prime Minister",
+            "C": "The President",
+            "D": "The Supreme Court"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which body was abolished under the 1963 Constitution?",
+        "options": {
+            "A": "The Senate",
+            "B": "The House of Representatives",
+            "C": "The Judicial Service Commission",
+            "D": "The Supreme Court"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was the reason for increasing the seats in the Senate and House of Representatives in 1963?",
+        "options": {
+            "A": "To reduce the power of the President",
+            "B": "To accommodate the creation of the Mid-Western region",
+            "C": "To abolish the Privy Council",
+            "D": "To strengthen the Judicial Service Commission"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How many seats were added to the Senate in 1963?",
+        "options": {
+            "A": "12",
+            "B": "44",
+            "C": "56",
+            "D": "312"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What was a criticism of the 1963 Constitution regarding the judiciary?",
+        "options": {
+            "A": "Judges were elected by the public.",
+            "B": "The judiciary was made too independent.",
+            "C": "The regulation of the judiciary was left in the hands of the executive.",
+            "D": "The Supreme Court was abolished."
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What event marked the end of the 1963 Republican Constitution?",
+        "options": {
+            "A": "A constitutional conference",
+            "B": "A public referendum",
+            "C": "A coup d'etat",
+            "D": "An election"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What did the 1963 Republican Constitution aim to eliminate?",
+        "options": {
+            "A": "The presidency",
+            "B": "The last traces of colonial rule",
+            "C": "The Senate",
+            "D": "The House of Representatives"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the highest court of appeal in Nigeria under the 1963 Constitution?",
+        "options": {
+            "A": "The Privy Council",
+            "B": "The Judicial Service Commission",
+            "C": "The Supreme Court",
+            "D": "The House of Representatives"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "When was the 1963 Republican Constitution passed into law in Nigeria?",
+        "options": {
+            "A": "July 25, 1963",
+            "B": "September 19, 1963",
+            "C": "October 1, 1963",
+            "D": "January 15, 1966"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who ceased to be the head of state under the 1963 Republican Constitution?",
+        "options": {
+            "A": "The Prime Minister",
+            "B": "The President",
+            "C": "The Queen of England",
+            "D": "The Commander-in-Chief"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "How was the president chosen under the 1963 Constitution?",
+        "options": {
+            "A": "By public referendum",
+            "B": "By secret ballot of a joint session of the national assembly",
+            "C": "By the Supreme Court",
+            "D": "By the Privy Council"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which body became the highest court of appeal under the 1963 Constitution?",
+        "options": {
+            "A": "The Privy Council",
+            "B": "The Judicial Service Commission",
+            "C": "The Supreme Court",
+            "D": "The House of Representatives"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was abolished under the 1963 Constitution?",
+        "options": {
+            "A": "The Senate",
+            "B": "The Judicial Service Commission",
+            "C": "The House of Representatives",
+            "D": "The Prime Minister"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who was vested with the power to appoint and promote judges under the 1963 Constitution?",
+        "options": {
+            "A": "The President",
+            "B": "The Supreme Court",
+            "C": "The Prime Minister",
+            "D": "The National Assembly"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What power was vested in the Supreme Court under the 1963 Constitution?",
+        "options": {
+            "A": "To appoint the Prime Minister",
+            "B": "To declare unconstitutional actions null and void",
+            "C": "To elect the President",
+            "D": "To abolish the Senate"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why were the seats in the Senate and House of Representatives increased in 1963?",
+        "options": {
+            "A": "To reduce the power of the President",
+            "B": "To accommodate the creation of the Mid-Western region",
+            "C": "To abolish the Privy Council",
+            "D": "To strengthen the Judicial Service Commission"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was a major criticism of the 1963 Constitution regarding the election of the president?",
+        "options": {
+            "A": "The president was elected by the public.",
+            "B": "The president was elected by the national assembly instead of the electorate.",
+            "C": "The president was appointed by the Queen.",
+            "D": "The president was chosen by the military."
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When did the 1963 Republican Constitution effectively end?",
+        "options": {
+            "A": "September 19, 1963",
+            "B": "October 1, 1963",
+            "C": "July 25, 1963",
+            "D": "January 15, 1966"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "When did Nigeria become independent?",
+        "options": {
+            "A": "1954",
+            "B": "1957",
+            "C": "1960",
+            "D": "1963"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who was the head of state at Nigeria's independence in 1960?",
+        "options": {
+            "A": "Tafawa Balewa",
+            "B": "Nnamdi Azikiwe",
+            "C": "The Queen of England",
+            "D": "Anthony Enahoro"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the highest court of appeal under the 1960 Independence Constitution?",
+        "options": {
+            "A": "The Nigerian Supreme Court",
+            "B": "The Judicial Service Commission",
+            "C": "The Privy Council",
+            "D": "The House of Lords"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was the role of the Judicial Service Commission under the 1960 Constitution?",
+        "options": {
+            "A": "To appoint the Prime Minister",
+            "B": "To advise on the appointment of judges",
+            "C": "To legislate on exclusive list items",
+            "D": "To represent the Queen"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What type of executive system did the 1960 Constitution provide?",
+        "options": {
+            "A": "A single executive",
+            "B": "A dual executive",
+            "C": "A military executive",
+            "D": "A colonial executive"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who had executive powers under the 1960 Constitution?",
+        "options": {
+            "A": "The Governor-General",
+            "B": "The Queen",
+            "C": "The Prime Minister",
+            "D": "The Judicial Service Commission"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What were items not included in any legislative lists called?",
+        "options": {
+            "A": "Exclusive list",
+            "B": "Concurrent list",
+            "C": "Residual list",
+            "D": "Federal list"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which region became self-governing in 1959?",
+        "options": {
+            "A": "Eastern Region",
+            "B": "Western Region",
+            "C": "Northern Region",
+            "D": "Southern Cameroon"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was one trace of imperialism in the 1960 Constitution?",
+        "options": {
+            "A": "The Prime Minister was British",
+            "B": "The Queen was still head of state",
+            "C": "Nigeria had no constitution",
+            "D": "The military controlled the government"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the purpose of the constitution's supremacy clause?",
+        "options": {
+            "A": "To maintain British control",
+            "B": "To dissuade fears of minority domination",
+            "C": "To strengthen the military",
+            "D": "To abolish the regions"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was proposed by Anthony Enahoro in 1951?",
+        "options": {
+            "A": "Creation of more regions",
+            "B": "Nigeria's independence in 1956",
+            "C": "Abolition of the legislature",
+            "D": "Military rule"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why did the Northern delegates oppose immediate independence?",
+        "options": {
+            "A": "They wanted to remain a colony",
+            "B": "They felt they weren't ready",
+            "C": "They preferred French rule",
+            "D": "They wanted to join Cameroon"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the consequence of the Northern delegates' opposition to independence?",
+        "options": {
+            "A": "Peaceful negotiations",
+            "B": "Riots in Kano",
+            "C": "Immediate independence",
+            "D": "Abolition of regions"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who called the 1953 London conference?",
+        "options": {
+            "A": "Nnamdi Azikiwe",
+            "B": "Tafawa Balewa",
+            "C": "Oliver Lyttleton",
+            "D": "Anthony Enahoro"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "How many regions were created by the Lyttleton Constitution?",
+        "options": {
+            "A": "3",
+            "B": "4",
+            "C": "5",
+            "D": "6"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which region had a unicameral legislature?",
+        "options": {
+            "A": "North",
+            "B": "West",
+            "C": "East",
+            "D": "Southern Cameroon"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "When did the Northern Region become self-governing?",
+        "options": {
+            "A": "1954",
+            "B": "1957",
+            "C": "1959",
+            "D": "1960"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What court was abolished under the Lyttleton Constitution?",
+        "options": {
+            "A": "Supreme Court",
+            "B": "High Courts",
+            "C": "West African Court of Appeal",
+            "D": "Privy Council"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What happened to Southern Cameroon?",
+        "options": {
+            "A": "Became part of the Eastern Region",
+            "B": "Opted out of Nigeria through referendum",
+            "C": "Became the capital territory",
+            "D": "Was abolished"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was created by the 1959 conference?",
+        "options": {
+            "A": "Military government",
+            "B": "Position of Prime Minister",
+            "C": "Unitary system",
+            "D": "Colonial office"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was one of the aims of the Richards Constitution?",
+        "options": {
+            "A": "To increase British control",
+            "B": "To promote Nigeria's unity",
+            "C": "To abolish regional assemblies",
+            "D": "To establish military rule"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How many unofficial members were in the legislative council under the Richards Constitution?",
+        "options": {
+            "A": "16",
+            "B": "28",
+            "C": "46",
+            "D": "136"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which regions had unicameral legislatures under the Richards Constitution?",
+        "options": {
+            "A": "North and West",
+            "B": "East and West",
+            "C": "North and East",
+            "D": "West only"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the reduced franchise amount under the Richards Constitution?",
+        "options": {
+            "A": "100 pounds",
+            "B": "75 pounds",
+            "C": "50 pounds",
+            "D": "25 pounds"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who nominated members to the regional houses of assembly?",
+        "options": {
+            "A": "The Governor",
+            "B": "The Native Authority",
+            "C": "The British Parliament",
+            "D": "The Supreme Court"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which two cities had elected members in the legislative council?",
+        "options": {
+            "A": "Lagos and Kano",
+            "B": "Calabar and Enugu",
+            "C": "Lagos and Calabar",
+            "D": "Ibadan and Port Harcourt"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was a major criticism of the Richards Constitution?",
+        "options": {
+            "A": "It gave too much power to the elites",
+            "B": "It limited franchise to only Lagos and Calabar",
+            "C": "It abolished regional assemblies",
+            "D": "It established military rule"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the nature of regional houses of assembly under the Richards Constitution?",
+        "options": {
+            "A": "They could make laws",
+            "B": "They were grounds for public discussion",
+            "C": "They were abolished",
+            "D": "They were controlled by the military"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which governor introduced the Macpherson Constitution?",
+        "options": {
+            "A": "Sir Hugh Clifford",
+            "B": "Sir Arthur Richards",
+            "C": "Sir John Macpherson",
+            "D": "Sir Bernard Bourdillon"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was created by the Macpherson Constitution?",
+        "options": {
+            "A": "A military government",
+            "B": "A federal legislature called House of Representatives",
+            "C": "A unitary system",
+            "D": "A colonial office"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who introduced the Clifford Constitution?",
+        "options": {
+            "A": "Sir Arthur Richards",
+            "B": "Sir Hugh Clifford",
+            "C": "Sir John Macpherson",
+            "D": "Sir Bernard Bourdillon"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What did the Clifford Constitution introduce for the first time in Nigeria?",
+        "options": {
+            "A": "Military rule",
+            "B": "An electoral system",
+            "C": "A unitary government",
+            "D": "A colonial office"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How many elected members were in the legislative council under the Clifford Constitution?",
+        "options": {
+            "A": "2",
+            "B": "4",
+            "C": "23",
+            "D": "46"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the minimum income requirement to vote under the Clifford Constitution?",
+        "options": {
+            "A": "50 pounds",
+            "B": "75 pounds",
+            "C": "100 pounds",
+            "D": "150 pounds"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which areas could the legislative council legislate for under the Clifford Constitution?",
+        "options": {
+            "A": "The whole country",
+            "B": "Only the North",
+            "C": "Only the South",
+            "D": "Only Lagos"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who divided Nigeria into East, West and North for administrative purposes?",
+        "options": {
+            "A": "Sir Hugh Clifford",
+            "B": "Sir Arthur Richards",
+            "C": "Sir Bernard Bourdillon",
+            "D": "Sir John Macpherson"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What replaced the Nigerian Council under the Clifford Constitution?",
+        "options": {
+            "A": "The Legislative Council",
+            "B": "The Executive Council",
+            "C": "The Regional Assembly",
+            "D": "The House of Chiefs"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What was the composition of the Legislative Council under the Clifford Constitution?",
+        "options": {
+            "A": "23 official and 23 unofficial members",
+            "B": "16 official and 28 unofficial members",
+            "C": "46 official members only",
+            "D": "28 official and 16 unofficial members"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What was the main criticism of the Clifford Constitution by educated elites?",
+        "options": {
+            "A": "It gave too much power to traditional rulers",
+            "B": "It did not represent the indigenous population",
+            "C": "It abolished regional assemblies",
+            "D": "It established military rule"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the foundation for future regionalism in Nigeria?",
+        "options": {
+            "A": "The division of Nigeria by Bourdillon",
+            "B": "The Clifford Constitution",
+            "C": "The Macpherson Constitution",
+            "D": "The Richards Constitution"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What was the main reason for the amalgamation of Nigeria in 1914?",
+        "options": {
+            "A": "Political unification",
+            "B": "Economic reasons",
+            "C": "Military strategy",
+            "D": "Cultural integration"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who was responsible for overseeing the unification of Nigeria in 1914?",
+        "options": {
+            "A": "Sir William Macgregor",
+            "B": "Sir Ralph Moore",
+            "C": "Sir Frederick Lugard",
+            "D": "Lewis Vernon Harcourt"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which British official strongly advocated for Nigeria's amalgamation?",
+        "options": {
+            "A": "The Earl of Selborne",
+            "B": "Mr Lewis Vernon Harcourt",
+            "C": "Sir William Macgregor",
+            "D": "All of the above"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What was the financial situation of Northern Nigeria Protectorate before amalgamation?",
+        "options": {
+            "A": "Budget surplus",
+            "B": "Budget deficit",
+            "C": "Financial stability",
+            "D": "Economic independence"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When did Lugard submit his detailed proposal for amalgamation?",
+        "options": {
+            "A": "May 9, 1913",
+            "B": "January 1, 1914",
+            "C": "December 31, 1912",
+            "D": "July 4, 1913"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What position did Lugard hold when he first thought about merging Nigeria?",
+        "options": {
+            "A": "Governor-General",
+            "B": "High Commissioner of Northern Nigeria",
+            "C": "Governor of Southern Protectorate",
+            "D": "Secretary of State for the Colonies"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the financial situation of Southern Nigeria before amalgamation?",
+        "options": {
+            "A": "Budget deficit",
+            "B": "Budget surplus",
+            "C": "Financial instability",
+            "D": "Economic depression"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who was the Secretary of State for the Colonies during the amalgamation?",
+        "options": {
+            "A": "Sir Frederick Lugard",
+            "B": "Lewis Vernon Harcourt",
+            "C": "Sir William Macgregor",
+            "D": "The Earl of Selborne"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the main challenge of governing Nigeria before amalgamation?",
+        "options": {
+            "A": "Cultural differences",
+            "B": "Different laws and governance styles",
+            "C": "Language barriers",
+            "D": "Religious conflicts"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What year did the amalgamation of Nigeria occur?",
+        "options": {
+            "A": "1912",
+            "B": "1913",
+            "C": "1914",
+            "D": "1915"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who recommended the division of Nigeria into 'Soudan' and 'Maritime' provinces?",
+        "options": {
+            "A": "Sir Frederick Lugard",
+            "B": "The Earl of Selborne",
+            "C": "Lewis Vernon Harcourt",
+            "D": "Sir William Macgregor"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the 'Soudan' province comprised of?",
+        "options": {
+            "A": "Southern Nigeria",
+            "B": "Northern Nigeria",
+            "C": "The Colony of Lagos",
+            "D": "The Niger Delta"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the 'Maritime' province comprised of?",
+        "options": {
+            "A": "Northern Nigeria",
+            "B": "The Colony of Lagos",
+            "C": "Southern Nigeria",
+            "D": "The Niger Delta"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who set up the Niger Committee?",
+        "options": {
+            "A": "The Earl of Selborne",
+            "B": "The Marguess of Salisbury",
+            "C": "Sir Frederick Lugard",
+            "D": "Lewis Vernon Harcourt"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the purpose of the Niger Committee?",
+        "options": {
+            "A": "To plan Nigeria's independence",
+            "B": "To determine the best form of British administration",
+            "C": "To divide Nigeria into states",
+            "D": "To establish a military government"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was one of the significant moments for British administration in Africa?",
+        "options": {
+            "A": "The creation of the Niger Committee",
+            "B": "The 1914 Amalgamation",
+            "C": "The independence of Nigeria",
+            "D": "The establishment of the Colony of Lagos"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What made governance difficult in pre-amalgamation Nigeria?",
+        "options": {
+            "A": "Lack of resources",
+            "B": "Numerous diversities",
+            "C": "Absence of colonial rule",
+            "D": "Military conflicts"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the political status of Nigeria before British colonial rule?",
+        "options": {
+            "A": "A unified state",
+            "B": "A military dictatorship",
+            "C": "It did not exist as a state",
+            "D": "A British protectorate"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was one of the sections in the chapter about Nigeria's evolution?",
+        "options": {
+            "A": "Military coups in Nigeria",
+            "B": "Constitutional development up to independence",
+            "C": "Post-independence economic policies",
+            "D": "Modern political parties"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What must be considered when understanding Nigeria's problems?",
+        "options": {
+            "A": "Only current political issues",
+            "B": "Only economic factors",
+            "C": "Historical, political, social and economic foundations",
+            "D": "Only colonial activities"
+        },
+        "answer": "C"
     }
 
 ];
