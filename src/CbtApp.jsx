@@ -3,6 +3,1156 @@ import {FaClock, FaChevronLeft, FaChevronRight, FaCheck, FaRedo, FaTrophy, FaBoo
 
 const questionsData = [
     {
+        "question": "In which year did Nigeria return to a democratic system of governance, leading to the establishment of INEC?",
+        "options": {
+            "A": "1991",
+            "B": "1995",
+            "C": "1999",
+            "D": "2003"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who was the first political party named Nigeria National Democratic Party (NNDP) founded by?",
+        "options": {
+            "A": "Dr. Nnamdi Azikiwe",
+            "B": "Herbert Macaulay",
+            "C": "Chief Obafemi Awolowo",
+            "D": "Ahmadu Bello"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The National Council of Nigeria and Cameroons (NCNC) was led by which prominent nationalist?",
+        "options": {
+            "A": "Herbert Macaulay",
+            "B": "Ahmadu Bello",
+            "C": "Dr. Nnamdi Azikiwe",
+            "D": "Obafemi Awolowo"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "The Action Group (AG) was led by which political figure?",
+        "options": {
+            "A": "Chief Obafemi Awolowo",
+            "B": "Dr. Nnamdi Azikiwe",
+            "C": "Herbert Macaulay",
+            "D": "Sir Ahmadu Bello"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "The Northern People's Congress (NPC) was led by which of the following?",
+        "options": {
+            "A": "Dr. Nnamdi Azikiwe",
+            "B": "Chief Obafemi Awolowo",
+            "C": "Sir Ahmadu Bello",
+            "D": "Herbert Macaulay"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which political party that predated Nigeria's political independence was founded in 1938?",
+        "options": {
+            "A": "Nigeria National Democratic Party (NNDP)",
+            "B": "Nigeria Youth Democratic Party (NYDP)",
+            "C": "National Council of Nigeria and Cameroon (NCNC)",
+            "D": "Northern People's Congress (NPC)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The National Council of Nigeria and Cameroons (NCNC) was formed in which year?",
+        "options": {
+            "A": "1923",
+            "B": "1938",
+            "C": "1944",
+            "D": "1951"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which political party was formed by the amalgamation of smaller groups in 1951?",
+        "options": {
+            "A": "Nigeria National Democratic Party (NNDP)",
+            "B": "Nigeria Youth Democratic Party (NYDP)",
+            "C": "National Council of Nigeria and Cameroon (NCNC)",
+            "D": "Northern People's Congress (NPC)"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "The Independent National Electoral Commission (INEC) was established to register political parties and conduct elections in which year?",
+        "options": {
+            "A": "1999",
+            "B": "1991",
+            "C": "1960",
+            "D": "1983"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Who was the presidential candidate of the People's Democratic Party (PDP) that won the 1999 presidential election?",
+        "options": {
+            "A": "General Abdulsalam Abubakar",
+            "B": "Chief Olusegun Obasanjo",
+            "C": "General Sani Abacha",
+            "D": "Alhaji Shehu Shagari"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these was NOT a political party that existed between 1960 and 1966?",
+        "options": {
+            "A": "Action Group (AG)",
+            "B": "Bornu Youth Movement (BYM)",
+            "C": "United National Independence Party (UNIP)",
+            "D": "People's Redemption Party (PRP)"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "According to the text, which political party was founded in 1951?",
+        "options": {
+            "A": "Northern Elements Progressive Union (NEPU)",
+            "B": "Action Group (AG)",
+            "C": "Democratic Party of Nigeria and Cameroon (DPNC)",
+            "D": "Kano Peoples Party (KPP)"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "The Action Group (AG) was formed in which year?",
+        "options": {
+            "A": "1951",
+            "B": "1955",
+            "C": "1960",
+            "D": "1966"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "The military coup of 1966 that truncated the First Republic was led by which Major?",
+        "options": {
+            "A": "Major General Ironsi",
+            "B": "Major Kaduna Nzeogwu",
+            "C": "General Yakubu Gowon",
+            "D": "General Aguiyi Ironsi"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Dr. Nnamdi Azikiwe was the first President of the Federal Republic of Nigeria, while who was the first Prime Minister?",
+        "options": {
+            "A": "Chief Obafemi Awolowo",
+            "B": "Sir Ahmadu Bello",
+            "C": "Sir (Alhaji) Abubakar Tafawa Balewa",
+            "D": "Dr. M.I. Okpara"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which political party was led by Sir Ahmadu Bello, Chief Obafemi Awolowo and Dr. Nnamdi Azikiwe during the First Republic?",
+        "options": {
+            "A": "Action Group (AG)",
+            "B": "National Council of Nigeria and the Cameroon (NCNC)",
+            "C": "Nigeria National Democratic Party (NNDP)",
+            "D": "None of the above"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What does the acronym UMBC stand for?",
+        "options": {
+            "A": "United Middle Belt Congress",
+            "B": "Union of Marginalized Believers Congress",
+            "C": "United Movement for Better Cameroon",
+            "D": "Union of Midwest and Benin Congress"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "The National Council of Nigeria and Cameroon (NCNC) was changed to National Council of Nigerian Citizens (NCNC) in which year?",
+        "options": {
+            "A": "1951",
+            "B": "1955",
+            "C": "1960",
+            "D": "1966"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which party was founded in 1955 alongside the Action Group?",
+        "options": {
+            "A": "Northern People's Congress (NPC)",
+            "B": "United Middle Belt Congress (UMBC)",
+            "C": "National Council of Nigeria and Cameroons (NCNC)",
+            "D": "Igbira Tribal Union (ITU)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The First Republic political parties existed between which years?",
+        "options": {
+            "A": "1951 and 1960",
+            "B": "1960 and 1966",
+            "C": "1966 and 1979",
+            "D": "1979 and 1983"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these was a major political party in the Second Republic (1979-1983)?",
+        "options": {
+            "A": "National Republican Convention (NRC)",
+            "B": "People's Redemption Party (PRP)",
+            "C": "Action Congress (AC)",
+            "D": "All Progressives Congress (APC)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who became the President of Nigeria in the Second Republic, following the country's adoption of the Presidential system of government?",
+        "options": {
+            "A": "General Olusegun Obasanjo",
+            "B": "Alhaji Shehu Shagari",
+            "C": "General Muhammadu Buhari",
+            "D": "General Ibrahim Babangida"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How many main political parties dominated Nigeria's political space in the Second Republic?",
+        "options": {
+            "A": "Two",
+            "B": "Four",
+            "C": "Five",
+            "D": "Six"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "The Second Republic lasted from which year to which year?",
+        "options": {
+            "A": "1960 to 1966",
+            "B": "1979 to 1983",
+            "C": "1992 to 1993",
+            "D": "1999 to present"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The military coup that ended the Second Republic on December 31, 1983, was executed by who?",
+        "options": {
+            "A": "General Sani Abacha",
+            "B": "General Muhammadu Buhari",
+            "C": "General Olusegun Obasanjo",
+            "D": "General Ibrahim Babangida"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which two political parties did General Ibrahim Badamosi Babangida establish for the Third Republic?",
+        "options": {
+            "A": "National Party of Nigeria (NPN) and Unity Party of Nigeria (UPN)",
+            "B": "National Republican Convention (NRC) and Social Democratic Party (SDP)",
+            "C": "People's Redemption Party (PRP) and Great Nigeria People's Party (GNPP)",
+            "D": "National Advance Party (NAP) and Nigerian People's Party (NPP)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When did General Ibrahim Babangida establish the two political parties for the Third Republic?",
+        "options": {
+            "A": "1983",
+            "B": "1985",
+            "C": "1992",
+            "D": "1993"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is another name used to describe the Third Republic?",
+        "options": {
+            "A": "Military Dictatorship",
+            "B": "Democratic Transition",
+            "C": "Military Democracy",
+            "D": "Civilian Rule"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which party from the list of Second Republic parties was led by Alhaji Shehu Shagari?",
+        "options": {
+            "A": "Unity Party of Nigeria (UPN)",
+            "B": "Nigerian People's Party (NPP)",
+            "C": "National Party of Nigeria (NPN)",
+            "D": "People's Redemption Party (PRP)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "The Third Republic was a transition program that was supposed to last until when?",
+        "options": {
+            "A": "1990",
+            "B": "1991",
+            "C": "1992",
+            "D": "1993"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What was the name of the electoral procedure used for the 1993 general elections?",
+        "options": {
+            "A": "Option B5",
+            "B": "Option A4",
+            "C": "Option C2",
+            "D": "Option D1"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who was the chairman of the National Electoral Commission of Nigeria (NEC) that introduced the Option A4 voting system?",
+        "options": {
+            "A": "General Ibrahim Babangida",
+            "B": "Chief M.K.O. Abiola",
+            "C": "Humphrey Nwosu",
+            "D": "Alhaji Bashir Tofa"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "The Option A4 voting system was considered the fairest in the political history of Nigeria because it allowed voters to do what?",
+        "options": {
+            "A": "Vote by secret ballot",
+            "B": "Vote openly by queuing behind their preferred candidate",
+            "C": "Vote online",
+            "D": "Vote by proxy"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The Third Republic is described as the most unsuccessful attempt at restoring democracy because of what?",
+        "options": {
+            "A": "The military completely surrendered power to civilians",
+            "B": "The political class was unprepared for governance",
+            "C": "General Babangida reneged on the promise to end military rule",
+            "D": "The political parties were too many"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "In the Third Republic, what was the mixture of governance structure?",
+        "options": {
+            "A": "Only military governance",
+            "B": "Only civilian governance",
+            "C": "A mixture of military and civilians in the government",
+            "D": "A mixture of traditional and civilian rulers"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "General Babangida's promise to end the Military rule in 1990 was constantly 'reneged' in order to do what?",
+        "options": {
+            "A": "Maintain stability in the country",
+            "B": "Introduce a new electoral system",
+            "C": "Retain power in government",
+            "D": "Give enough time for parties to prepare"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "According to the text, what was the name of M.K.O. Abiola's running mate in the 1993 presidential election?",
+        "options": {
+            "A": "Chief Humphrey Nwosu",
+            "B": "Alhaji Babangida",
+            "C": "Alhaji Bashir Tofa",
+            "D": "Alhaji Babagana Kingibe"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "The two-party system was aimed at doing all the following except:",
+        "options": {
+            "A": "Giving citizens a clear choice",
+            "B": "Reducing ethnic and tribal divisions",
+            "C": "Providing a sense of national outlook",
+            "D": "Encouraging a multiplicity of parties"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What does the acronym NRC stand for?",
+        "options": {
+            "A": "National Republican Convention",
+            "B": "National Restoration Committee",
+            "C": "Nigerian Ruling Council",
+            "D": "National Revolutionary Congress"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "In the Third Republic, what was the main political goal that General Babangida failed to achieve?",
+        "options": {
+            "A": "Conducting an open election",
+            "B": "Creating two political parties",
+            "C": "Making political associations spang up",
+            "D": "Ending military rule"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "As of December 2014, how many registered political parties are listed in the provided text?",
+        "options": {
+            "A": "20",
+            "B": "26",
+            "C": "30",
+            "D": "40"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following parties is NOT on the list of registered parties as of December 2014?",
+        "options": {
+            "A": "All Progressives Congress (APC)",
+            "B": "Justice Party (JP)",
+            "C": "People's Democratic Party (PDP)",
+            "D": "Labour Party (LP)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What does the acronym NCNC stand for in the list of parties?",
+        "options": {
+            "A": "National Citizens for Nigeria Campaign",
+            "B": "National Conscience Party",
+            "C": "National Citizens of Nigeria Congress",
+            "D": "National Centre Party of Nigeria"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The text mentions a flurry of activities in the registration of political parties in Nigeria towards which year's general elections?",
+        "options": {
+            "A": "2011",
+            "B": "2015",
+            "C": "2019",
+            "D": "2023"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the acronym for Accord?",
+        "options": {
+            "A": "AC",
+            "B": "A",
+            "C": "ACC",
+            "D": "ARD"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which political party had its presidential candidate, Gen Muhammadu Buhari, win the 2015 general election?",
+        "options": {
+            "A": "People's Democratic Party (PDP)",
+            "B": "All Progressives Congress (APC)",
+            "C": "Labour Party (LP)",
+            "D": "Accord (A)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The win of Gen Muhammadu Buhari in 2015 broke the monopoly of which party as the government at the center?",
+        "options": {
+            "A": "All Progressives Congress (APC)",
+            "B": "Social Democratic Party (SDP)",
+            "C": "People's Democratic Party (PDP)",
+            "D": "National Republican Convention (NRC)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which of these parties is listed as the 22nd party?",
+        "options": {
+            "A": "National Conscience Party (NCP)",
+            "B": "National Centre Party of Nigeria (NCPN)",
+            "C": "Mega Progressive Peoples Party (MPPP)",
+            "D": "Labour Party (LP)"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What does the acronym PPN stand for?",
+        "options": {
+            "A": "People's Progressive Network",
+            "B": "Peoples Party of Nigeria",
+            "C": "Progressive Party of Nigeria",
+            "D": "Party for People of Nigeria"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The text states that Nigeria is what kind of state?",
+        "options": {
+            "A": "One-party state",
+            "B": "Two-party state",
+            "C": "Multi-party state",
+            "D": "Military state"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who declared the secession of Biafra from Nigeria in 1967?",
+        "options": {
+            "A": "General Yakubu Gowon",
+            "B": "Colonel Odumegwu Ojukwu",
+            "C": "Major Kaduna Nzeogwu",
+            "D": "Chief Obafemi Awolowo"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the primary reason for the Biafra secession?",
+        "options": {
+            "A": "Economic inequality",
+            "B": "Religious differences",
+            "C": "Persecution of Easterners after the 1966 counter-coup",
+            "D": "British colonial policies"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "How long did the Nigerian Civil War last?",
+        "options": {
+            "A": "12 months",
+            "B": "30 months",
+            "C": "5 years",
+            "D": "18 months"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which disease became widespread in Biafra due to famine during the war?",
+        "options": {
+            "A": "Malaria",
+            "B": "Kwashiorkor",
+            "C": "Cholera",
+            "D": "Smallpox"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What international organization emerged partly due to the humanitarian crisis in Biafra?",
+        "options": {
+            "A": "United Nations Peacekeepers",
+            "B": "Doctors Without Borders",
+            "C": "Red Cross",
+            "D": "Amnesty International"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What triggered the Aba Women's Riot of 1929?",
+        "options": {
+            "A": "Religious discrimination",
+            "B": "Imposition of taxes on women by British colonial authorities",
+            "C": "Land confiscation by Warrant Chiefs",
+            "D": "Forced labor policies"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who were the Warrant Chiefs?",
+        "options": {
+            "A": "Traditional Igbo rulers",
+            "B": "British-appointed local administrators",
+            "C": "Religious leaders",
+            "D": "Market women leaders"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which tactic did the Aba women NOT use during their protest?",
+        "options": {
+            "A": "Burning colonial buildings",
+            "B": "Releasing prisoners",
+            "C": "Kidnapping British officials",
+            "D": "Cutting telegraph wires"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "How long did the Aba Women's Riot last?",
+        "options": {
+            "A": "1 week",
+            "B": "2 months",
+            "C": "1 year",
+            "D": "6 days"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the colonial government's response to the riot?",
+        "options": {
+            "A": "Negotiation with women leaders",
+            "B": "Abolition of the Warrant Chief system",
+            "C": "Use of lethal force (shooting protesters)",
+            "D": "Immediate tax reforms"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What was a major consequence of the Kano Riot of 1953?",
+        "options": {
+            "A": "Unification of Northern and Southern Nigeria",
+            "B": "Strained North-South relations",
+            "C": "Immediate independence from Britain",
+            "D": "Economic boom in Kano"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which political parties formed a temporary alliance after the Kano Riot?",
+        "options": {
+            "A": "AG and NPC",
+            "B": "NCNC and AG",
+            "C": "NPC and NCNC",
+            "D": "UMBC and NEPU"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What constitutional event followed the Kano Riot?",
+        "options": {
+            "A": "1951 Macpherson Constitution",
+            "B": "1953 and 1954 Constitutional Conferences",
+            "C": "1960 Independence Constitution",
+            "D": "1979 Presidential Constitution"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "The Kano Riot exposed the need for Nigeria to adopt what principle?",
+        "options": {
+            "A": "Centralized governance",
+            "B": "Regional autonomy (self-development)",
+            "C": "Military rule",
+            "D": "Socialist policies"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these was NOT an effect of the Kano Riot?",
+        "options": {
+            "A": "Loss of lives",
+            "B": "Destruction of property",
+            "C": "Formation of the NYM",
+            "D": "Constitutional reforms"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which military ruler overthrew Chief Ernest Shonekan's interim government in 1993?",
+        "options": {
+            "A": "General Ibrahim Babangida",
+            "B": "General Sani Abacha",
+            "C": "General Olusegun Obasanjo",
+            "D": "General Muhammadu Buhari"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the charge against MKO Abiola after his declaration as President in 1994?",
+        "options": {
+            "A": "Corruption",
+            "B": "Treason",
+            "C": "Electoral fraud",
+            "D": "Embezzlement"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these parties was NOT among the original three in Nigeria's 4th Republic (1999)?",
+        "options": {
+            "A": "Alliance for Democracy (AD)",
+            "B": "People's Democratic Party (PDP)",
+            "C": "All Nigeria People's Party (ANPP)",
+            "D": "All Progressive Grand Alliance (APGA)"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What major event occurred in Nigeria's 2015 general elections?",
+        "options": {
+            "A": "Cancellation of elections by INEC",
+            "B": "Merger of opposition parties to form APC",
+            "C": "Military coup",
+            "D": "Introduction of electronic voting"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which parties merged to form the All Progressives Congress (APC) in 2015?",
+        "options": {
+            "A": "PDP, ANPP, and AD",
+            "B": "CPC, ACN, ANPP, and APGA faction",
+            "C": "UNPP, NDP, and APGA",
+            "D": "LP, ADC, and SDP"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why did Northern politicians reject the 1956 independence motion?",
+        "options": {
+            "A": "Fear of Southern domination",
+            "B": "Educational/economic backwardness",
+            "C": "British pressure",
+            "D": "Religious objections"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which Northern leader proposed 'independence as soon as practicable'?",
+        "options": {
+            "A": "Tafawa Balewa",
+            "B": "Ahmadu Bello (Sardauna of Sokoto)",
+            "C": "Aminu Kano",
+            "D": "Yakubu Gowon"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How did Southern politicians protest the Northern counter-motion?",
+        "options": {
+            "A": "Armed rebellion",
+            "B": "Walkout from the House",
+            "C": "Boycott of elections",
+            "D": "Forming a parallel government"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What triggered the Kano Riot after the parliamentary walkout?",
+        "options": {
+            "A": "Southern politicians' campaign in Kano",
+            "B": "British troop deployment",
+            "C": "Northern secession threats",
+            "D": "Economic sanctions"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What was the colonial government's response to the Kano Riot?",
+        "options": {
+            "A": "Declaration of a state of emergency",
+            "B": "Arrest of all Southern leaders",
+            "C": "Immediate independence grant",
+            "D": "Dissolution of the Northern Region"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is NOT a principle of good governance according to the text?",
+        "options": {
+            "A": "Accountability",
+            "B": "Transparency",
+            "C": "Nepotism",
+            "D": "Rule of Law"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What does 'consensus-oriented' governance aim to achieve?",
+        "options": {
+            "A": "Majority rule without minority input",
+            "B": "Broad consensus after mediating different interests",
+            "C": "Dictatorial decision-making",
+            "D": "Exclusion of marginalized groups"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which principle ensures citizens' access to information about government activities?",
+        "options": {
+            "A": "Effectiveness and Efficiency",
+            "B": "Transparency",
+            "C": "Inclusiveness",
+            "D": "Responsiveness"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is described as 'the hallmark of good governance' in the text?",
+        "options": {
+            "A": "Transparency",
+            "B": "Accountability",
+            "C": "Rule of Law",
+            "D": "Responsiveness"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these is a prerequisite for protecting human rights and checking abuse of power?",
+        "options": {
+            "A": "Consensus-oriented governance",
+            "B": "Rule of Law",
+            "C": "Effectiveness",
+            "D": "Inclusiveness"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What do the Yoruba call the Supreme Being?",
+        "options": {
+            "A": "Chukwu",
+            "B": "Oghene",
+            "C": "Olodumare",
+            "D": "Obasi"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "According to Igbo belief, which component represents 'destiny' in a person?",
+        "options": {
+            "A": "Aru (body)",
+            "B": "Chi (spirit)",
+            "C": "Mkpulubi (soul)",
+            "D": "Obi (heart)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the Urhobo name for God?",
+        "options": {
+            "A": "Oritse",
+            "B": "Oghene",
+            "C": "Tamara",
+            "D": "Osonobua"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which ethnic group believes God is referred to as 'Obasi'?",
+        "options": {
+            "A": "Calabar",
+            "B": "Igbo",
+            "C": "Yoruba",
+            "D": "Edo"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What do Nigerians generally believe about the Supreme Being?",
+        "options": {
+            "A": "He is limited in power",
+            "B": "He is the creator and sustainer of the universe",
+            "C": "He is only worshipped by one ethnic group",
+            "D": "He has no role in human affairs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to the text, what is essential for achieving social order and peace?",
+        "options": {
+            "A": "Strict laws",
+            "B": "Possessing and practicing virtues like respect",
+            "C": "Economic prosperity",
+            "D": "Political power"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these is NOT mentioned as a way to show respect in the text?",
+        "options": {
+            "A": "Respecting leaders for their positions",
+            "B": "Respecting elders in society",
+            "C": "Respecting only those who respect you",
+            "D": "Respecting children's views when they are right"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What does the text say about respecting younger ones?",
+        "options": {
+            "A": "Their views should always be ignored",
+            "B": "Their views should be respected if they are right",
+            "C": "Only elders deserve respect",
+            "D": "Respect is not reciprocal"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is described as 'a curse in Nigeria' in the text?",
+        "options": {
+            "A": "Hard work",
+            "B": "Laziness",
+            "C": "Respect",
+            "D": "Wealth"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What value is highly celebrated by Nigerians according to Igboin (2011)?",
+        "options": {
+            "A": "Wealth",
+            "B": "Hard work",
+            "C": "Political power",
+            "D": "Religious devotion"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these is NOT listed as a value affecting Nigeria's social system?",
+        "options": {
+            "A": "Political values",
+            "B": "Aesthetic values",
+            "C": "Technological values",
+            "D": "Economic values"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is described as 'the first state of life in society'?",
+        "options": {
+            "A": "Community",
+            "B": "School",
+            "C": "Family",
+            "D": "Government"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "How do Nigerians traditionally view divorce?",
+        "options": {
+            "A": "As a personal choice with no societal impact",
+            "B": "As an obstruction to societal well-being",
+            "C": "As a modern necessity",
+            "D": "As a religious requirement"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What concept is described as 'being your brother's keeper'?",
+        "options": {
+            "A": "Communal living",
+            "B": "Individualism",
+            "C": "Capitalism",
+            "D": "Isolationism"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is formed from the family according to the text?",
+        "options": {
+            "A": "Government",
+            "B": "Community",
+            "C": "Religion",
+            "D": "Economy"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "According to the World Bank (1992), what is NOT a pillar of good governance?",
+        "options": {
+            "A": "Political participation",
+            "B": "Rule of law",
+            "C": "Tribal favoritism",
+            "D": "Protection of human rights"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which of these is a key feature of good governance as described in the text?",
+        "options": {
+            "A": "Centralized decision-making",
+            "B": "Impartial legal accommodation of minority views",
+            "C": "Restricted freedom of speech",
+            "D": "Exclusion of vulnerable groups"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does good governance aim to improve?",
+        "options": {
+            "A": "Military strength",
+            "B": "Quality of life for citizens",
+            "C": "Tribal dominance",
+            "D": "Religious uniformity"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which principle ensures that government policies are implemented effectively?",
+        "options": {
+            "A": "Nepotism",
+            "B": "Efficiency",
+            "C": "Tribalism",
+            "D": "Exclusivity"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is essential for citizen involvement in governance?",
+        "options": {
+            "A": "Political participation",
+            "B": "Tribal loyalty",
+            "C": "Economic inequality",
+            "D": "Religious segregation"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which of these is NOT an element of tribalism?",
+        "options": {
+            "A": "Loyalty to one's tribe",
+            "B": "Perceiving other tribes as inferior",
+            "C": "Promoting national unity",
+            "D": "Strong attachment to cultural group"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a primary cause of tribalism according to the text?",
+        "options": {
+            "A": "Good leadership",
+            "B": "Economic equality",
+            "C": "Strong ethnic divisions",
+            "D": "Religious tolerance"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which of these is a consequence of tribalism?",
+        "options": {
+            "A": "Social integration",
+            "B": "Encouragement of hatred among tribes",
+            "C": "Economic development",
+            "D": "Political stability"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How is nepotism defined in the text?",
+        "options": {
+            "A": "Fair allocation of resources",
+            "B": "Unmerited favor to relatives/friends",
+            "C": "Promotion based on merit",
+            "D": "Equal opportunity for all"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a recommended solution to curb nepotism in Nigeria?",
+        "options": {
+            "A": "Concentrating power within one tribe",
+            "B": "Eliminating unqualified appointments",
+            "C": "Encouraging tribal favoritism",
+            "D": "Reducing transparency in governance"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a norm according to the text?",
+        "options": {
+            "A": "A personal opinion",
+            "B": "An accepted standard of behavior",
+            "C": "A religious doctrine",
+            "D": "A political ideology"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these is a universal value mentioned in the text?",
+        "options": {
+            "A": "Tribal loyalty",
+            "B": "Honesty",
+            "C": "Nepotism",
+            "D": "Discrimination"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What happens when norms are violated in a society?",
+        "options": {
+            "A": "Positive reinforcement",
+            "B": "Negative sanctions",
+            "C": "No consequences",
+            "D": "Economic growth"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How are values described in relation to society?",
+        "options": {
+            "A": "Fixed and unchangeable",
+            "B": "Shaped by societal constructs",
+            "C": "Irrelevant to behavior",
+            "D": "Unique to individuals only"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the impact of neglecting norms and values in Nigeria?",
+        "options": {
+            "A": "Enhanced security",
+            "B": "Moral decadence and insecurity",
+            "C": "Economic prosperity",
+            "D": "Political unity"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What role do values play in nation-building?",
+        "options": {
+            "A": "They dictate developmental goals",
+            "B": "They promote tribal conflicts",
+            "C": "They restrict freedom of religion",
+            "D": "They encourage nepotism"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which regions in Nigeria are predominantly Christian and Muslim?",
+        "options": {
+            "A": "North (Christian), South (Muslim)",
+            "B": "North (Muslim), Middle-Belt/South (Christian)",
+            "C": "Uniform distribution nationwide",
+            "D": "Only urban areas practice both"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What has reduced the influence of African Traditional Religion (ATR) in Nigeria?",
+        "options": {
+            "A": "Tribalism",
+            "B": "Arrival of Christianity and Islam",
+            "C": "Government policies",
+            "D": "Economic changes"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a common practice among Nigerians regarding religion?",
+        "options": {
+            "A": "Strict adherence to one faith",
+            "B": "Mixing Christianity/Islam with indigenous beliefs",
+            "C": "Rejection of all religions",
+            "D": "Exclusive worship of ATR"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which value is critical for democratic governance?",
+        "options": {
+            "A": "Tribal favoritism",
+            "B": "Faith in individual dignity and rationality",
+            "C": "Centralized authority",
+            "D": "Religious exclusivity"
+        },
+        "answer": "B"
+    },
+    {
         "question": "Which vegetation zone do the northern Yoruba of Kwara and Kogi states belong to?",
         "options": {
             "A": "Mangrove",
@@ -163,6 +1313,56 @@ const questionsData = [
         "answer": "C"
     },
     {
+        "question": "Which of these is NOT a cause of systemic disenfranchisement in Nigerian elections?",
+        "options": {
+            "A": "Crashing of registration computers",
+            "B": "Malfunctioning Smartcard Readers",
+            "C": "Early arrival of INEC officials",
+            "D": "Cancellation of results to favor candidates"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a major consequence of electoral violence during elections?",
+        "options": {
+            "A": "Increased voter turnout",
+            "B": "Destruction of electoral materials",
+            "C": "Enhanced credibility of results",
+            "D": "Faster announcement of results"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How do corrupt electoral officials compromise elections?",
+        "options": {
+            "A": "By enforcing strict voting rules",
+            "B": "By accepting bribes to falsify results",
+            "C": "By delaying the voting process",
+            "D": "By preventing all forms of violence"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What tool is used for voter accreditation but may malfunction during elections?",
+        "options": {
+            "A": "Ballot boxes",
+            "B": "Smartcard Readers",
+            "C": "Manual registers",
+            "D": "Biometric scanners"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why might registered voters fail to vote despite having PVCs?",
+        "options": {
+            "A": "Names missing from voter registers",
+            "B": "Excessive voter education",
+            "C": "Lack of polling stations",
+            "D": "Oversupply of electoral materials"
+        },
+        "answer": "A"
+    },
+    {
         "question": "The Jukun people are primarily associated with which zone?",
         "options": {
             "A": "Guinea Savannah",
@@ -171,6 +1371,156 @@ const questionsData = [
             "D": "Coastal Areas"
         },
         "answer": "A"
+    },
+    {
+        "question": "Which of these is NOT a function of INEC?",
+        "options": {
+            "A": "Registering political parties",
+            "B": "Auditing political party accounts",
+            "C": "Appointing state governors",
+            "D": "Conducting voter education"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Who was the first Chairman of INEC?",
+        "options": {
+            "A": "Attahiru Jega",
+            "B": "Mahmood Yakubu",
+            "C": "Ephraim Akpata",
+            "D": "Abdulsalami Abubakar"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Under which constitutional section was INEC established?",
+        "options": {
+            "A": "Section 153(f)",
+            "B": "Section 162(a)",
+            "C": "Section 145(d)",
+            "D": "Section 177(b)"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is INEC's primary mandate?",
+        "options": {
+            "A": "To draft new constitutions",
+            "B": "To conduct free and fair elections",
+            "C": "To appoint judicial officers",
+            "D": "To manage national budgets"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these elections does INEC NOT oversee?",
+        "options": {
+            "A": "Presidential elections",
+            "B": "Local government chairmanship elections",
+            "C": "National Assembly elections",
+            "D": "State governorship elections"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does Transparency International define corruption?",
+        "options": {
+            "A": "Excessive taxation",
+            "B": "Abuse of entrusted power for private gain",
+            "C": "Political campaigning",
+            "D": "Public service delays"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these is NOT a form of corruption mentioned in the text?",
+        "options": {
+            "A": "Inflation of contracts",
+            "B": "Examination malpractice",
+            "C": "Transparent budgeting",
+            "D": "Money laundering"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a wider perspective of corruption beyond financial misappropriation?",
+        "options": {
+            "A": "Voter registration",
+            "B": "Perverting justice through bribes",
+            "C": "Public infrastructure development",
+            "D": "Free education policies"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What sector is mentioned as affected by examination malpractice?",
+        "options": {
+            "A": "Healthcare",
+            "B": "Education",
+            "C": "Agriculture",
+            "D": "Transportation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which term describes Nigeria's corruption according to the text?",
+        "options": {
+            "A": "Ethnic and politically colored",
+            "B": "Non-existent",
+            "C": "Limited to the private sector",
+            "D": "Easily eradicated"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What was a key characteristic of General Sani Abacha's regime?",
+        "options": {
+            "A": "Promotion of free press",
+            "B": "Use of repression and assassinations",
+            "C": "Decentralization of power",
+            "D": "Economic prosperity"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How did General Abdulsalami Abubakar differ from Abacha?",
+        "options": {
+            "A": "By prolonging military rule",
+            "B": "By promising a swift transition to democracy",
+            "C": "By suppressing political detainees",
+            "D": "By canceling all elections"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was the duration of General Abubakar's rule?",
+        "options": {
+            "A": "5 years",
+            "B": "10 months",
+            "C": "3 years",
+            "D": "18 months"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which action is attributed to Abacha's regime?",
+        "options": {
+            "A": "Announcing June 12 election results",
+            "B": "Jettisoning democratic transition structures",
+            "C": "Releasing all political prisoners",
+            "D": "Promoting press freedom"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What event ended Abacha's rule?",
+        "options": {
+            "A": "A military coup",
+            "B": "His death from cardiac arrest",
+            "C": "Mass protests",
+            "D": "International sanctions"
+        },
+        "answer": "B"
     },
     {
         "question": "The Nupe ethnic group is associated with which state?",
