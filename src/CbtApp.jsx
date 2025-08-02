@@ -1503,7 +1503,7 @@ const questionsData = [
         "answer": "B"
     },
     {
-        "question": "Which action is attributed to Abacha's regime?",
+        "question": "Which action is attributed to Abacha's regime?..",
         "options": {
             "A": "Announcing June 12 election results",
             "B": "Jettisoning democratic transition structures",
