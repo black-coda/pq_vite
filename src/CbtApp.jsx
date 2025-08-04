@@ -1,7 +1,17 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {FaClock, FaChevronLeft, FaChevronRight, FaCheck, FaRedo, FaTrophy, FaBookOpen} from 'react-icons/fa';
+import {
+    FaBookOpen,
+    FaClock,
+    FaCheck,
+    FaChevronLeft,
+    FaChevronRight,
+    FaTrophy,
+    FaRedo,
+    FaGraduationCap,
+    FaArrowLeft
+} from 'react-icons/fa';
 
-const questionsData = [
+const course1 = [
     {
         "question": "In which year did Nigeria return to a democratic system of governance, leading to the establishment of INEC?",
         "options": {
@@ -3858,14 +3868,1451 @@ const questionsData = [
 ];
 
 
-function shuffleArray(array) {
-    return array
-        .map((item) => ({ item, sort: Math.random() }))
-        .sort((a, b) => a.sort - b.sort)
-        .map(({ item }) => item);
-}
+const course2 = [
+    {
+        "question": "Which layer of the atmosphere contains the ozone layer?",
+        "options": {
+            "A": "Troposphere",
+            "B": "Stratosphere",
+            "C": "Mesosphere",
+            "D": "Thermosphere"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary function of the ozone layer?",
+        "options": {
+            "A": "Producing weather patterns",
+            "B": "Absorbing ultraviolet (UV) radiation",
+            "C": "Generating auroras",
+            "D": "Stabilizing atmospheric pressure"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which gas is most abundant in Earth's atmosphere?",
+        "options": {
+            "A": "Oxygen",
+            "B": "Carbon dioxide",
+            "C": "Nitrogen",
+            "D": "Argon"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What human activity is implicated in ozone layer depletion?",
+        "options": {
+            "A": "Deforestation",
+            "B": "Use of chlorofluorocarbons (CFCs)",
+            "C": "Burning fossil fuels",
+            "D": "Industrial water pollution"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which atmospheric layer is closest to Earth's surface?",
+        "options": {
+            "A": "Exosphere",
+            "B": "Thermosphere",
+            "C": "Troposphere",
+            "D": "Mesosphere"
+        },
+        "answer": "C"
+    },
+
+    // Image 2: Earth's Internal Structure
+    {
+        "question": "Which layer of Earth's interior is in a semi-fluid state?",
+        "options": {
+            "A": "Crust",
+            "B": "Mantle",
+            "C": "Inner core",
+            "D": "Lithosphere"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary composition of Earth's core?",
+        "options": {
+            "A": "Silicon and oxygen",
+            "B": "Nickel and iron",
+            "C": "Magnesium and aluminum",
+            "D": "Carbon and sulfur"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which Earth layer is responsible for tectonic activity?",
+        "options": {
+            "A": "Crust",
+            "B": "Mantle",
+            "C": "Outer core",
+            "D": "Inner core"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the lithosphere composed of?",
+        "options": {
+            "A": "Crust only",
+            "B": "Mantle only",
+            "C": "Crust and upper mantle",
+            "D": "Outer core and mantle"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which Earth layer has the highest density?",
+        "options": {
+            "A": "Continental crust",
+            "B": "Oceanic crust",
+            "C": "Mantle",
+            "D": "Inner core"
+        },
+        "answer": "D"
+    },
+
+    // Image 3: Solar System
+    {
+        "question": "Which planet is known as Earth's 'sister planet'?",
+        "options": {
+            "A": "Mercury",
+            "B": "Venus",
+            "C": "Mars",
+            "D": "Jupiter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary composition of Venus's atmosphere?",
+        "options": {
+            "A": "Oxygen and nitrogen",
+            "B": "Hydrogen and helium",
+            "C": "Carbon dioxide",
+            "D": "Methane"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which planet is the largest in the solar system?",
+        "options": {
+            "A": "Saturn",
+            "B": "Jupiter",
+            "C": "Neptune",
+            "D": "Uranus"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is Pluto classified as in the solar system?",
+        "options": {
+            "A": "Terrestrial planet",
+            "B": "Gas giant",
+            "C": "Dwarf planet",
+            "D": "Asteroid"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which planet has the coldest recorded temperature?",
+        "options": {
+            "A": "Neptune",
+            "B": "Uranus",
+            "C": "Mars",
+            "D": "Saturn"
+        },
+        "answer": "B"
+    },
+
+    // Image 4: Solar System Formation
+    {
+        "question": "What is the most widely accepted theory of solar system formation?",
+        "options": {
+            "A": "Capture Theory",
+            "B": "Nebular Hypothesis",
+            "C": "Interstellar Cloud Theory",
+            "D": "Big Bang Theory"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What triggered the collapse of the solar nebula according to scientists?",
+        "options": {
+            "A": "A nearby supernova",
+            "B": "Magnetic forces",
+            "C": "Solar winds",
+            "D": "Black hole"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the Kuiper Belt primarily composed of?",
+        "options": {
+            "A": "Gas giants",
+            "B": "Planetesimals",
+            "C": "Black holes",
+            "D": "Dark matter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which scientist proposed the Capture Theory?",
+        "options": {
+            "A": "Otto Schmidt",
+            "B": "Michael Woolfson",
+            "C": "Immanuel Kant",
+            "D": "Pierre-Simon Laplace"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the estimated age of the solar system?",
+        "options": {
+            "A": "1 billion years",
+            "B": "4.6 billion years",
+            "C": "10 billion years",
+            "D": "13.8 billion years"
+        },
+        "answer": "B"
+    },
+
+    // Image 5: Terrestrial Planets
+    {
+        "question": "Which planet has no natural satellites?",
+        "options": {
+            "A": "Earth",
+            "B": "Mars",
+            "C": "Venus",
+            "D": "Jupiter"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Why is Mars called the 'Red Planet'?",
+        "options": {
+            "A": "Due to its hot temperature",
+            "B": "Because of iron oxide on its surface",
+            "C": "From reflected sunlight",
+            "D": "Due to volcanic activity"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which planet orbits the Sun the fastest?",
+        "options": {
+            "A": "Mercury",
+            "B": "Venus",
+            "C": "Earth",
+            "D": "Mars"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is Earth's natural satellite called?",
+        "options": {
+            "A": "Phobos",
+            "B": "Deimos",
+            "C": "Moon",
+            "D": "Titan"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which planet is closest to the Sun?",
+        "options": {
+            "A": "Venus",
+            "B": "Mercury",
+            "C": "Earth",
+            "D": "Mars"
+        },
+        "answer": "B"
+    },
+
+    // Image 6: Jovian Planets
+    {
+        "question": "Which planet has the most moons?",
+        "options": {
+            "A": "Saturn",
+            "B": "Jupiter",
+            "C": "Uranus",
+            "D": "Neptune"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What are Saturn's rings primarily made of?",
+        "options": {
+            "A": "Solid rock",
+            "B": "Ice particles and dust",
+            "C": "Metallic fragments",
+            "D": "Gas clouds"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which planet is named after the Roman god of the sea?",
+        "options": {
+            "A": "Uranus",
+            "B": "Neptune",
+            "C": "Jupiter",
+            "D": "Mars"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is unique about Uranus's rotation?",
+        "options": {
+            "A": "It rotates backward",
+            "B": "It doesn't rotate",
+            "C": "It rotates on its side",
+            "D": "It rotates the fastest"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which planet was discovered first with a telescope?",
+        "options": {
+            "A": "Jupiter",
+            "B": "Saturn",
+            "C": "Uranus",
+            "D": "Neptune"
+        },
+        "answer": "C"
+    },
+
+    // Image 7: Galaxies
+    {
+        "question": "What is our galaxy called?",
+        "options": {
+            "A": "Andromeda",
+            "B": "Milky Way",
+            "C": "Sombrero",
+            "D": "Whirlpool"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What unit is used to measure astronomical distances?",
+        "options": {
+            "A": "Kilometer",
+            "B": "Astronomical Unit",
+            "C": "Light year",
+            "D": "Parsec"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "How many stars are estimated to be in the Milky Way?",
+        "options": {
+            "A": "1 million",
+            "B": "100 million",
+            "C": "100 billion",
+            "D": "100 trillion"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What holds galaxies together?",
+        "options": {
+            "A": "Electromagnetic forces",
+            "B": "Gravitational pull",
+            "C": "Dark energy",
+            "D": "Solar winds"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is a light year?",
+        "options": {
+            "A": "Time taken for light to cross Earth's orbit",
+            "B": "Distance light travels in one year",
+            "C": "Brightness of a star",
+            "D": "Age of the universe"
+        },
+        "answer": "B"
+    },
+
+    // Image 8: Science and Technology
+    {
+        "question": "What is the main difference between science and technology?",
+        "options": {
+            "A": "Science creates, technology explains",
+            "B": "Science seeks knowledge, technology applies it",
+            "C": "Science is theoretical, technology is natural",
+            "D": "No significant difference"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which organization classifies fields of science and technology?",
+        "options": {
+            "A": "UNESCO",
+            "B": "OECD",
+            "C": "NASA",
+            "D": "WHO"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does FOS stand for in scientific classification?",
+        "options": {
+            "A": "Fields of Science",
+            "B": "Foundation of Studies",
+            "C": "Framework of Systems",
+            "D": "Frequency of Signals"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which of these is NOT a natural science?",
+        "options": {
+            "A": "Mathematics",
+            "B": "Physics",
+            "C": "Engineering",
+            "D": "Biology"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What year was the Revised Fields of Science published?",
+        "options": {
+            "A": "1995",
+            "B": "2002",
+            "C": "2007",
+            "D": "2012"
+        },
+        "answer": "C"
+    },
+
+    // Image 9: STS Education
+    {
+        "question": "What does STS stand for in education?",
+        "options": {
+            "A": "Science Teaching Standards",
+            "B": "Science, Technology, Society",
+            "C": "Scientific Theory System",
+            "D": "Standard Testing System"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When did STS education gain recognition in the US?",
+        "options": {
+            "A": "1960s",
+            "B": "1981",
+            "C": "1995",
+            "D": "2000"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the main goal of STS education?",
+        "options": {
+            "A": "Memorization of facts",
+            "B": "Teaching science in human context",
+            "C": "Focusing only on technology",
+            "D": "Eliminating social studies"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which country first implemented STS as 'Science in Society'?",
+        "options": {
+            "A": "USA",
+            "B": "UK",
+            "C": "Germany",
+            "D": "Japan"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What professional body was formed for STS in the US?",
+        "options": {
+            "A": "NASTS",
+            "B": "NASA",
+            "C": "AAAS",
+            "D": "NSTA"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the beginning of spring called?",
+        "options": {
+            "A": "Summer Solstice",
+            "B": "Vernal Equinox",
+            "C": "Autumnal Equinox",
+            "D": "Winter Solstice"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which season has the longest day of the year?",
+        "options": {
+            "A": "Spring",
+            "B": "Summer",
+            "C": "Fall",
+            "D": "Winter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What phenomenon occurs at the North Pole during winter solstice?",
+        "options": {
+            "A": "24 hours of daylight",
+            "B": "12 hours of daylight",
+            "C": "24 hours of darkness",
+            "D": "A solar eclipse"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "On which date does the autumnal equinox occur?",
+        "options": {
+            "A": "March 21",
+            "B": "June 22",
+            "C": "September 21",
+            "D": "December 21"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is unique about day and night duration during equinoxes?",
+        "options": {
+            "A": "Days are longer",
+            "B": "Nights are longer",
+            "C": "Equal duration (12 hours each)",
+            "D": "Complete darkness"
+        },
+        "answer": "C"
+    },
+
+    // Image 2: Earth's Facts
+    {
+        "question": "What percentage of Earth's surface is covered by water?",
+        "options": {
+            "A": "30%",
+            "B": "50%",
+            "C": "70%",
+            "D": "90%"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is Earth's approximate age?",
+        "options": {
+            "A": "1.5 billion years",
+            "B": "4.5 billion years",
+            "C": "10 billion years",
+            "D": "6,000 years"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these is NOT true about Earth's name?",
+        "options": {
+            "A": "Derived from Anglo-Saxon",
+            "B": "Means 'ground or soil'",
+            "C": "Comes from Roman mythology",
+            "D": "Unique among planets"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Where is most of Earth's freshwater stored?",
+        "options": {
+            "A": "Rivers",
+            "B": "Glaciers",
+            "C": "Underground aquifers",
+            "D": "Atmosphere"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What causes ocean tides?",
+        "options": {
+            "A": "Earth's rotation",
+            "B": "Gravitational pull of the moon",
+            "C": "Solar winds",
+            "D": "Underwater volcanoes"
+        },
+        "answer": "B"
+    },
+
+    // Image 3: Earth's Movements
+    {
+        "question": "What is Earth's axial tilt?",
+        "options": {
+            "A": "15°",
+            "B": "23.5°",
+            "C": "45°",
+            "D": "90°"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How long does Earth take to complete one revolution around the sun?",
+        "options": {
+            "A": "24 hours",
+            "B": "30 days",
+            "C": "365.25 days",
+            "D": "12 months"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What motion causes day and night?",
+        "options": {
+            "A": "Revolution",
+            "B": "Rotation",
+            "C": "Tilt",
+            "D": "Orbit"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What shape is Earth's orbit around the sun?",
+        "options": {
+            "A": "Circular",
+            "B": "Elliptical",
+            "C": "Spiral",
+            "D": "Irregular"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Where does the sun appear vertically overhead during equinoxes?",
+        "options": {
+            "A": "Tropics",
+            "B": "Poles",
+            "C": "Equator",
+            "D": "Mid-latitudes"
+        },
+        "answer": "C"
+    },
+
+    // Image 4: Solar System Formation
+    {
+        "question": "What is the most widely accepted theory of solar system formation?",
+        "options": {
+            "A": "Big Bang Theory",
+            "B": "Nebular Hypothesis",
+            "C": "Steady State Theory",
+            "D": "Panspermia Theory"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What triggered the collapse of the solar nebula?",
+        "options": {
+            "A": "Black hole",
+            "B": "Nearby supernova",
+            "C": "Solar flares",
+            "D": "Magnetic fields"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What are planetesimals?",
+        "options": {
+            "A": "Small stars",
+            "B": "Asteroid-shaped objects",
+            "C": "Gas giants",
+            "D": "Black holes"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why are outer planets gaseous?",
+        "options": {
+            "A": "Closer to the sun",
+            "B": "Weaker solar winds in outer regions",
+            "C": "Made of heavier elements",
+            "D": "Older age"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who proposed the Capture Theory?",
+        "options": {
+            "A": "Immanuel Kant",
+            "B": "Michael Woolfson",
+            "C": "Pierre-Simon Laplace",
+            "D": "Albert Einstein"
+        },
+        "answer": "B"
+    },
+
+    // Image 5: Terrestrial Planets
+    {
+        "question": "Which planet is called Earth's 'sister planet'?",
+        "options": {
+            "A": "Mercury",
+            "B": "Venus",
+            "C": "Mars",
+            "D": "Jupiter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What makes Mercury unique among terrestrial planets?",
+        "options": {
+            "A": "Largest size",
+            "B": "Fastest orbit",
+            "C": "Most moons",
+            "D": "Strongest magnetic field"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why is Mars called the 'Red Planet'?",
+        "options": {
+            "A": "Due to iron oxide on its surface",
+            "B": "From reflected sunlight",
+            "C": "Because of volcanic activity",
+            "D": "Due to atmospheric gases"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which terrestrial planet has the densest atmosphere?",
+        "options": {
+            "A": "Mercury",
+            "B": "Venus",
+            "C": "Earth",
+            "D": "Mars"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is Earth's only natural satellite?",
+        "options": {
+            "A": "Phobos",
+            "B": "Deimos",
+            "C": "Moon",
+            "D": "Titan"
+        },
+        "answer": "C"
+    },
+
+    // Image 6: Jovian Planets
+    {
+        "question": "Which planet has the most moons?",
+        "options": {
+            "A": "Jupiter",
+            "B": "Saturn",
+            "C": "Uranus",
+            "D": "Neptune"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What are Saturn's rings primarily made of?",
+        "options": {
+            "A": "Solid rock",
+            "B": "Ice particles and dust",
+            "C": "Metallic fragments",
+            "D": "Gas clouds"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which planet is the coldest in the solar system?",
+        "options": {
+            "A": "Jupiter",
+            "B": "Saturn",
+            "C": "Uranus",
+            "D": "Neptune"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is unique about Uranus's rotation?",
+        "options": {
+            "A": "Rotates backward",
+            "B": "Doesn't rotate",
+            "C": "Rotates on its side",
+            "D": "Rotates fastest"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which planet was discovered first with a telescope?",
+        "options": {
+            "A": "Jupiter",
+            "B": "Saturn",
+            "C": "Uranus",
+            "D": "Neptune"
+        },
+        "answer": "C"
+    },
+
+    // Image 7: Galaxies
+    {
+        "question": "What is our galaxy called?",
+        "options": {
+            "A": "Andromeda",
+            "B": "Milky Way",
+            "C": "Sombrero",
+            "D": "Whirlpool"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What unit is used to measure interstellar distances?",
+        "options": {
+            "A": "Kilometers",
+            "B": "Astronomical Units",
+            "C": "Light years",
+            "D": "Parsecs"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What holds galaxies together?",
+        "options": {
+            "A": "Electromagnetic forces",
+            "B": "Gravity",
+            "C": "Dark energy",
+            "D": "Solar winds"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "About how many stars are in the Milky Way?",
+        "options": {
+            "A": "1 million",
+            "B": "100 million",
+            "C": "100 billion",
+            "D": "1 trillion"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a light year?",
+        "options": {
+            "A": "Time light takes to cross our solar system",
+            "B": "Distance light travels in one year",
+            "C": "Brightness measurement",
+            "D": "Age of the universe"
+        },
+        "answer": "B"
+    },
+
+    // Image 8: Science and Technology
+    {
+        "question": "What is the main difference between science and technology?",
+        "options": {
+            "A": "Science creates, technology explains",
+            "B": "Science seeks knowledge, technology applies it",
+            "C": "Science is natural, technology is artificial",
+            "D": "No significant difference"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which organization classifies fields of science and technology?",
+        "options": {
+            "A": "UNESCO",
+            "B": "OECD",
+            "C": "NASA",
+            "D": "WHO"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does FOS stand for in scientific classification?",
+        "options": {
+            "A": "Fields of Science",
+            "B": "Framework of Systems",
+            "C": "Frequency of Signals",
+            "D": "Foundation of Studies"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which is NOT a natural science?",
+        "options": {
+            "A": "Physics",
+            "B": "Chemistry",
+            "C": "Engineering",
+            "D": "Biology"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "When was the Revised Fields of Science published?",
+        "options": {
+            "A": "1995",
+            "B": "2002",
+            "C": "2007",
+            "D": "2012"
+        },
+        "answer": "C"
+    },
+
+    // Image 9: STS Education
+    {
+        "question": "What does STS stand for in education?",
+        "options": {
+            "A": "Science Teaching Standards",
+            "B": "Science, Technology, Society",
+            "C": "Scientific Theory System",
+            "D": "Standard Testing System"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When did STS education gain recognition in the US?",
+        "options": {
+            "A": "1960s",
+            "B": "1981",
+            "C": "1995",
+            "D": "2000"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the main goal of STS education?",
+        "options": {
+            "A": "Memorization of facts",
+            "B": "Teaching science in human context",
+            "C": "Focusing only on technology",
+            "D": "Eliminating social studies"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Where was STS first implemented as 'Science in Society'?",
+        "options": {
+            "A": "USA",
+            "B": "UK",
+            "C": "Germany",
+            "D": "Japan"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What professional body was formed for STS in the US?",
+        "options": {
+            "A": "NASTS",
+            "B": "NASA",
+            "C": "AAAS",
+            "D": "NSTA"
+        },
+        "answer": "A"
+    },
+
+    // Image 10: Scientific Methodology
+    {
+        "question": "What is the first step in the scientific method?",
+        "options": {
+            "A": "Form a hypothesis",
+            "B": "Ask a question",
+            "C": "Conduct experiments",
+            "D": "Analyze data"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is methodological naturalism?",
+        "options": {
+            "A": "Studying nature without technology",
+            "B": "Explaining phenomena without supernatural references",
+            "C": "Focusing only on natural environments",
+            "D": "Rejecting all theories"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which scientist famously used imagination in developing relativity?",
+        "options": {
+            "A": "Newton",
+            "B": "Einstein",
+            "C": "Galileo",
+            "D": "Hawking"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is NOT a characteristic of scientific knowledge?",
+        "options": {
+            "A": "Testable",
+            "B": "Open to revision",
+            "C": "Absolute truth",
+            "D": "Based on evidence"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What maintains objectivity in science?",
+        "options": {
+            "A": "Peer review",
+            "B": "Government approval",
+            "C": "Popular opinion",
+            "D": "Religious doctrine"
+        },
+        "answer": "A"
+    },
+
+    // Image 11: Scientific Method
+    {
+        "question": "What is a hypothesis?",
+        "options": {
+            "A": "Proven fact",
+            "B": "Educated guess",
+            "C": "Final conclusion",
+            "D": "Random idea"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which comes first in the scientific method?",
+        "options": {
+            "A": "Experiment",
+            "B": "Observation",
+            "C": "Conclusion",
+            "D": "Publication"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What should you do if results don't match your hypothesis?",
+        "options": {
+            "A": "Change the data",
+            "B": "Modify the hypothesis",
+            "C": "Ignore the results",
+            "D": "Stop the experiment"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of controls in experiments?",
+        "options": {
+            "A": "Make experiments more complex",
+            "B": "Provide comparison baseline",
+            "C": "Speed up the process",
+            "D": "Reduce costs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Why is communication important in science?",
+        "options": {
+            "A": "For fame",
+            "B": "Peer verification",
+            "C": "To get funding",
+            "D": "Personal satisfaction"
+        },
+        "answer": "B"
+    },
+
+    // Image 12: Origin of Life Theories
+    {
+        "question": "Which theory attributes life to supernatural creation?",
+        "options": {
+            "A": "Spontaneous generation",
+            "B": "Special creation",
+            "C": "Steady-state",
+            "D": "Biochemical evolution"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Who proposed the idea of spontaneous generation?",
+        "options": {
+            "A": "Darwin",
+            "B": "Aristotle",
+            "C": "Einstein",
+            "D": "Pasteur"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the steady-state theory propose?",
+        "options": {
+            "A": "Life has no origin",
+            "B": "Life came from space",
+            "C": "Life was created",
+            "D": "Life evolved chemically"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is panspermia also called?",
+        "options": {
+            "A": "Special creation",
+            "B": "Cosmozoon theory",
+            "C": "Biochemical theory",
+            "D": "Divine origin"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What did Oparin's 'primeval soup' refer to?",
+        "options": {
+            "A": "Early oceans with organic molecules",
+            "B": "Volcanic magma",
+            "C": "Atmospheric gases",
+            "D": "Meteorite composition"
+        },
+        "answer": "A"
+    },
+
+    // Image 13: Human Evolution
+    {
+        "question": "Where were Cro-Magnon remains first found?",
+        "options": {
+            "A": "Africa",
+            "B": "Europe",
+            "C": "Asia",
+            "D": "Australia"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What distinguishes humans from other primates?",
+        "options": {
+            "A": "Tool use",
+            "B": "Creativity and reasoning",
+            "C": "Social groups",
+            "D": "Opposable thumbs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the study of human origins called?",
+        "options": {
+            "A": "Anthropology",
+            "B": "Paleontology",
+            "C": "Archaeology",
+            "D": "Palaeoanthropology"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "When did modern humans first appear?",
+        "options": {
+            "A": "1 million years ago",
+            "B": "300,000 years ago",
+            "C": "30,000 years ago",
+            "D": "10,000 years ago"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was a key factor in human evolution?",
+        "options": {
+            "A": "Climate change",
+            "B": "Volcanic activity",
+            "C": "Meteor impacts",
+            "D": "Ocean currents"
+        },
+        "answer": "A"
+    },
+
+    // Image 14: History of Science
+    {
+        "question": "Who first proposed the geocentric model?",
+        "options": {
+            "A": "Greeks",
+            "B": "Mesopotamians",
+            "C": "Egyptians",
+            "D": "Chinese"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "When did modern science emerge?",
+        "options": {
+            "A": "Ancient Greece",
+            "B": "17th century",
+            "C": "Middle Ages",
+            "D": "19th century"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What invention revolutionized astronomy?",
+        "options": {
+            "A": "Microscope",
+            "B": "Telescope",
+            "C": "Barometer",
+            "D": "Thermometer"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which civilization developed gunpowder?",
+        "options": {
+            "A": "Greek",
+            "B": "Chinese",
+            "C": "Roman",
+            "D": "Indian"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What was a key Greek contribution to science?",
+        "options": {
+            "A": "Experimental method",
+            "B": "Logical examination of nature",
+            "C": "Advanced technology",
+            "D": "Industrial applications"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary component of natural gas?",
+        "options": {
+            "A": "Ethane",
+            "B": "Propane",
+            "C": "Methane",
+            "D": "Butane"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "How is crude oil classified?",
+        "options": {
+            "A": "By color and smell",
+            "B": "By origin, density, and sulfur content",
+            "C": "By viscosity alone",
+            "D": "By its age in the ground"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the main use of coke produced from coal?",
+        "options": {
+            "A": "Making plastic",
+            "B": "Road construction",
+            "C": "Fuel and reducing agent for smelting",
+            "D": "Fertilizer production"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which radiation type was discovered to contain positively charged particles?",
+        "options": {
+            "A": "Gamma radiation",
+            "B": "Beta radiation",
+            "C": "Alpha radiation",
+            "D": "Neutron radiation"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What percentage of Earth's surface is covered by water?",
+        "options": {
+            "A": "50%",
+            "B": "61%",
+            "C": "71%",
+            "D": "80%"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which of these is NOT a renewable resource?",
+        "options": {
+            "A": "Solar energy",
+            "B": "Wind energy",
+            "C": "Natural gas",
+            "D": "Biomass"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the main environmental advantage of nuclear energy?",
+        "options": {
+            "A": "Produces no waste",
+            "B": "Doesn't release greenhouse gases",
+            "C": "Is completely safe",
+            "D": "Uses minimal water"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which type of plastic can be remolded and reused?",
+        "options": {
+            "A": "Thermosetting plastics",
+            "B": "Bakelite",
+            "C": "Thermoplastics",
+            "D": "Epoxy resins"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a major environmental concern associated with plastics?",
+        "options": {
+            "A": "They increase oxygen levels",
+            "B": "They release toxic chemicals when degraded",
+            "C": "They reduce soil erosion",
+            "D": "They are fully biodegradable"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of these is a characteristic of hazardous waste?",
+        "options": {
+            "A": "Always liquid form",
+            "B": "Biodegradable within days",
+            "C": "May cause adverse health effects",
+            "D": "Only produced in hospitals"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which characteristic of Nigerian crude oil gives it a competitive advantage in global markets?",
+        "options": {
+            "A": "High sulfur content and heavy density",
+            "B": "Low sulfur content and light density",
+            "C": "High paraffin content and viscous nature",
+            "D": "Mixed sulfur levels with medium API gravity"
+        },
+        "answer": "B",
+        "explanation": "The text specifies Nigerian crude is 'light and sweet' (low density/sulfur), commanding better prices."
+    },
+    {
+        "question": "During coal carbonization at 1000-3000°C, which by-product serves as the primary source of aromatic compounds?",
+        "options": {
+            "A": "Coal gas",
+            "B": "Ammoniacal liquor",
+            "C": "Coal tar",
+            "D": "Coke"
+        },
+        "answer": "C",
+        "explanation": "Coal tar is described as containing 'mainly aromatic compounds' for fractional distillation."
+    },
+    {
+        "question": "What is the critical limitation of hydrogen fuel production via steam reforming?",
+        "options": {
+            "A": "Requires rare earth catalysts",
+            "B": "Generates CO2 as a byproduct",
+            "C": "Only works with seawater",
+            "D": "Produces radioactive waste"
+        },
+        "answer": "B",
+        "explanation": "The text notes steam reforming of natural gas produces both hydrogen and CO2, undermining its clean energy potential."
+    },
+    {
+        "question": "Which hazardous waste characteristic applies to sodium metal exposed to water?",
+        "options": {
+            "A": "Ignitability (D003)",
+            "B": "Corrosivity (D002)",
+            "C": "Reactivity (D003)",
+            "D": "Toxicity (D004)"
+        },
+        "answer": "C",
+        "explanation": "Sodium metal is cited as reactive waste due to violent water reactions generating toxic gases."
+    },
+    {
+        "question": "What distinguishes thermoplastics from thermosetting plastics at the molecular level?",
+        "options": {
+            "A": "Presence of cross-linked covalent bonds",
+            "B": "Exclusive use of heterochain polymers",
+            "C": "Dependence on van der Waals forces",
+            "D": "Incorporation of radioactive stabilizers"
+        },
+        "answer": "C",
+        "explanation": "Thermoplastics rely on weak van der Waals forces, allowing reshaping, unlike thermosets' covalent cross-links."
+    },
+    {
+        "question": "Which radiation discovery demonstrated particles deflected by positive charges?",
+        "options": {
+            "A": "Becquerel's uranium experiments",
+            "B": "Curie's pitchblende observations",
+            "C": "Rutherford's gold foil tests",
+            "D": "Marie Curie's alpha radiation studies"
+        },
+        "answer": "D",
+        "explanation": "Marie Curie showed alpha particles were repelled by positive plates, indicating their positive charge."
+    },
+    {
+        "question": "What is the primary environmental risk of mechanical beach raking for marine debris removal?",
+        "options": {
+            "A": "Increased atmospheric CO2",
+            "B": "Disruption of shoreline ecosystems",
+            "C": "Acceleration of plastic photodegradation",
+            "D": "Leaching of heavy metals into sand"
+        },
+        "answer": "B",
+        "explanation": "The text highlights damage to aquatic vegetation and nesting birds from habitat disturbance."
+    },
+    {
+        "question": "Which nuclear fuel cycle stage poses the longest-term disposal challenge?",
+        "options": {
+            "A": "Yellowcake production",
+            "B": "Reactor rod operation",
+            "C": "Cooling pool storage",
+            "D": "Final waste encapsulation"
+        },
+        "answer": "D",
+        "explanation": "Spent fuel rods require 10,000 years to decay safely, making permanent storage technologically complex."
+    },
+    {
+        "question": "What makes brominated flame retardants in plastics particularly hazardous?",
+        "options": {
+            "A": "They degrade into greenhouse gases",
+            "B": "They bioaccumulate in food chains",
+            "C": "They neutralize polymer cross-linking",
+            "D": "They increase plastic viscosity"
+        },
+        "answer": "B",
+        "explanation": "These additives are noted as persistent, bioaccumulative toxins with carcinogenic potential."
+    },
+    {
+        "question": "Which factor critically limits the sustainability of deep-well geothermal energy extraction?",
+        "options": {
+            "A": "Depletion of magma reservoirs",
+            "B": "Corrosion of drilling equipment",
+            "C": "Groundwater contamination risk",
+            "D": "High-pressure steam management"
+        },
+        "answer": "A",
+        "explanation": "The text implies finite magma heat sources may not be truly renewable on human timescales."
+    }
+];
+
+
+// Sample data structure with different courses
+const questionsData = {
+    "GST 101": course1,
+    "HISTORY AND PHYLOSOPHY OF SCIENCE": course2,
+    "MTH 101": [
+        {
+            "question": "What is 15 + 25?",
+            "options": {
+                "A": "35",
+                "B": "40",
+                "C": "45",
+                "D": "50"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "What is the square root of 64?",
+            "options": {
+                "A": "6",
+                "B": "7",
+                "C": "8",
+                "D": "9"
+            },
+            "answer": "C"
+        }
+    ]
+};
+
+const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+};
 
 export default function CBTApp() {
+    const [selectedCourse, setSelectedCourse] = useState(null);
     const [mode, setMode] = useState(null); // 'practice' or 'real'
     const [currentIndex, setCurrentIndex] = useState(0);
     const [userAnswers, setUserAnswers] = useState({});
@@ -3905,7 +5352,8 @@ export default function CBTApp() {
     }, [userAnswers]);
 
     const startTest = (selectedMode, minutes = 0) => {
-        const randomQuestions = shuffleArray(questionsData);
+        const courseQuestions = questionsData[selectedCourse];
+        const randomQuestions = shuffleArray(courseQuestions);
         setShuffledQuestions(randomQuestions);
         setMode(selectedMode);
         setCurrentIndex(0);
@@ -3921,7 +5369,7 @@ export default function CBTApp() {
 
     const handleAnswer = (option) => {
         setSelectedOption(option);
-        setUserAnswers(prev => ({ ...prev, [currentIndex]: option }));
+        setUserAnswers(prev => ({...prev, [currentIndex]: option}));
 
         if (mode === 'practice') {
             const currentQuestion = shuffledQuestions[currentIndex];
@@ -3977,13 +5425,86 @@ export default function CBTApp() {
         return "Keep studying, you'll improve!";
     };
 
+    const resetApp = () => {
+        setSelectedCourse(null);
+        setMode(null);
+        setShowResult(false);
+        setUserAnswers({});
+        setCurrentIndex(0);
+        clearInterval(timerRef.current);
+    };
+
+    // Course selection screen
+    if (!selectedCourse) {
+        return (
+            <div
+                className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-100 flex items-center justify-center p-4">
+                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-2xl">
+                    <div className="bg-gradient-to-r from-purple-600 to-blue-700 p-6 text-white text-center">
+                        <h1 className="text-3xl font-bold mb-2 flex items-center justify-center">
+                            <FaGraduationCap className="mr-3"/>
+                            Knowledge Challenge
+                        </h1>
+                        <p className="opacity-90">Select a course to begin your test</p>
+                    </div>
+
+                    <div className="p-8">
+                        <h2 className="text-xl font-semibold text-gray-800 mb-6 text-center">Choose Your Course</h2>
+                        <div className="grid gap-4">
+                            {Object.keys(questionsData).map((courseCode) => {
+                                const questionCount = questionsData[courseCode].length;
+                                return (
+                                    <div
+                                        key={courseCode}
+                                        className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100 cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200"
+                                        onClick={() => setSelectedCourse(courseCode)}
+                                    >
+                                        <div className="flex items-center justify-between">
+                                            <div className="flex items-center">
+                                                <div className="bg-blue-100 p-3 rounded-full mr-4">
+                                                    <FaBookOpen className="text-blue-600 text-xl"/>
+                                                </div>
+                                                <div>
+                                                    <h3 className="text-xl font-semibold text-gray-800">{courseCode}</h3>
+                                                    <p className="text-gray-600 text-sm">{questionCount} questions
+                                                        available</p>
+                                                </div>
+                                            </div>
+                                            <div className="text-blue-500">
+                                                <FaChevronRight/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    // Mode selection screen
     if (!mode) {
         return (
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+            <div
+                className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
                 <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-md">
-                    <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white text-center">
-                        <h1 className="text-3xl font-bold mb-2">Knowledge Challenge</h1>
-                        <p className="opacity-90">Test your skills in different modes</p>
+                    <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white">
+                        <div className="flex items-center justify-between mb-4">
+                            <button
+                                onClick={() => setSelectedCourse(null)}
+                                className="text-white hover:text-blue-200 transition-colors"
+                            >
+                                <FaArrowLeft/>
+                            </button>
+                            <h2 className="text-xl font-bold">{selectedCourse}</h2>
+                            <div></div>
+                        </div>
+                        <div className="text-center">
+                            <h1 className="text-2xl font-bold mb-2">Test Mode</h1>
+                            <p className="opacity-90">Choose how you want to practice</p>
+                        </div>
                     </div>
 
                     <div className="p-8">
@@ -4036,11 +5557,13 @@ export default function CBTApp() {
         const performanceMessage = getPerformanceMessage(percentage);
 
         return (
-            <div className="min-h-screen bg-gradient-to-br from-green-50 to-teal-100 flex items-center justify-center p-4">
+            <div
+                className="min-h-screen bg-gradient-to-br from-green-50 to-teal-100 flex items-center justify-center p-4">
                 <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-md">
                     <div className="bg-gradient-to-r from-green-600 to-teal-700 p-6 text-white text-center">
                         <h1 className="text-3xl font-bold mb-2">Test Results</h1>
                         <p className="opacity-90">{performanceMessage}</p>
+                        <p className="text-sm opacity-75 mt-2">Course: {selectedCourse}</p>
                     </div>
 
                     <div className="p-8 text-center">
@@ -4057,7 +5580,7 @@ export default function CBTApp() {
                                 <path
                                     d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
                                     fill="none"
                                     stroke={percentage >= 70 ? "#10b981" : percentage >= 50 ? "#f59e0b" : "#ef4444"}
                                     strokeWidth="3"
@@ -4076,22 +5599,32 @@ export default function CBTApp() {
                             </div>
                             <div className="flex justify-between items-center mb-2">
                                 <span className="text-gray-600">Incorrect Answers:</span>
-                                <span className="font-bold text-red-600">{totalQuestions - score}/{totalQuestions}</span>
+                                <span
+                                    className="font-bold text-red-600">{totalQuestions - score}/{totalQuestions}</span>
                             </div>
                             {mode === 'real' && (
                                 <div className="flex justify-between items-center">
                                     <span className="text-gray-600">Time Taken:</span>
-                                    <span className="font-bold text-blue-600">{formatTime((shuffledQuestions.length * 60) - timeLeft)}</span>
+                                    <span
+                                        className="font-bold text-blue-600">{formatTime((shuffledQuestions.length * 60) - timeLeft)}</span>
                                 </div>
                             )}
                         </div>
 
-                        <button
-                            className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 flex items-center justify-center"
-                            onClick={() => setMode(null)}
-                        >
-                            <FaRedo className="mr-2"/> Start New Test
-                        </button>
+                        <div className="space-y-3">
+                            <button
+                                className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 flex items-center justify-center"
+                                onClick={() => setMode(null)}
+                            >
+                                <FaRedo className="mr-2"/> Try Again
+                            </button>
+                            <button
+                                className="w-full py-3 bg-gray-600 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 transition duration-300 flex items-center justify-center"
+                                onClick={resetApp}
+                            >
+                                <FaGraduationCap className="mr-2"/> Choose Different Course
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -4107,7 +5640,15 @@ export default function CBTApp() {
             <div className="bg-white rounded-2xl shadow-xl w-full max-w-2xl overflow-hidden">
                 <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-4 text-white">
                     <div className="flex justify-between items-center">
-                        <h2 className="text-xl font-bold">Knowledge Challenge</h2>
+                        <div className="flex items-center">
+                            <button
+                                onClick={() => setMode(null)}
+                                className="text-white hover:text-blue-200 transition-colors mr-3"
+                            >
+                                <FaArrowLeft/>
+                            </button>
+                            <h2 className="text-xl font-bold">{selectedCourse}</h2>
+                        </div>
                         {mode === 'real' && (
                             <div className="flex items-center bg-blue-800 px-3 py-1 rounded-full">
                                 <FaClock className="mr-2"/>
@@ -4126,12 +5667,12 @@ export default function CBTApp() {
 
                 <div className="p-6">
                     <div className="flex justify-between items-center mb-6">
-            <span className="text-sm font-medium text-gray-500">
-              Question {currentIndex + 1} of {totalQuestions}
-            </span>
+                        <span className="text-sm font-medium text-gray-500">
+                            Question {currentIndex + 1} of {totalQuestions}
+                        </span>
                         <span className="text-sm font-medium text-blue-600">
-              {mode === 'practice' ? 'Practice Mode' : 'Exam Mode'}
-            </span>
+                            {mode === 'practice' ? 'Practice Mode' : 'Exam Mode'}
+                        </span>
                     </div>
 
                     <h3 className="text-xl font-semibold text-gray-800 mb-6">
